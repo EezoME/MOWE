@@ -1,0 +1,197 @@
+		lines
+	A
+Action (action)
+Action (inventory)
+Action (linker)
+Action (mine_state)
+Action (waypoint)
+add_ables
+Add (objective_progress)
+Advance Ratio
+AI Move
+Altitude
+Amount
+Animation
+Approach
+Attack
+Attack Altitude
+	B
+Backward
+Bone
+Burst Mode
+	C
+Call
+Cannon
+CircleDalay
+Clear Queue
+Clone
+Collage
+Color
+Component
+Context
+Control
+Copy Squad
+Count
+Count (entity_manager)
+Covers
+Crew
+	D
+Delay
+Deviate
+Die
+Direction
+Disable Cancel
+Discovered
+Do Not Restore Camera
+Do Not Store Camera
+Drop
+	E
+Effect
+Enable
+Enabled
+Enemies
+Energy
+Entites
+Entity
+Entity (spawn)
+Event
+Event On Cancel
+Event On Next
+Examined
+	F
+Fade
+Fire Mode
+Flags
+Follow Commander
+Force Auto Complete
+Force Placement
+Forward
+Forward_numeric
+Fov
+Function
+	G
+Ground
+Guard
+	H
+Health
+Hide
+	I
+Ignore Captured by User
+Ignore Z
+Impgernability
+In Camera
+Inactive
+Interval
+Item
+	K
+Keep Orientation
+Kind
+	L
+Lock
+Loop
+	M
+Make Enemies Forget
+Make Squad
+Max Speed KpH
+Message
+Mids
+Miner
+Mode (actor_to_cover)
+Mode (emit)
+Mode (event)
+Mode (game_speed)
+Mode (if, while)
+Mode (squad_state)
+Move From Back
+Move Mode
+Move Radius
+	N
+Name (environment)
+Name (reinforcement)
+Name (scenario)
+Name (set_clip)
+Name (sound)
+Name Squad
+Name (squad)
+Name (task)
+Name (trigger)
+Nearest
+No Advance
+No Retreat
+Not Synced
+	O
+On
+Only Weapon
+Op
+Operation (player)
+Operation (reinforcement)
+Operation (squad)
+	P
+Place (board)
+Place (linker)
+Player
+	Q
+Quant Mode
+	R
+Radius
+Random Weapon
+Remove
+Result
+Resume
+Retreat Ratio
+	S
+Say
+Score
+Selector
+Set
+Slot Name
+Smooth Begin
+Smooth End
+Sound
+Source
+Speed
+Speed KpH
+Speed (numeric)
+Squad
+Start
+State (actor_component)
+State (селектор)
+State (task)
+Status
+Stop
+Stop All
+	T
+Tag
+Tag Add
+Tag Remove
+Target
+Target Waypoint
+Team
+Text
+Text (con)
+Time
+Title
+TotalTime
+Trigger On Cancel
+Trigger On Next
+Turn
+Type (if, while)
+Type (movement)
+Type (селектор)
+	U
+Unmasking
+Up
+	V
+Value
+Var
+Vehicle
+Video
+Volume (action)
+Volume (music)
+	W
+Waypoint
+Waypoint to Attack
+Weapon Prepare
+Who
+	Z
+Zone

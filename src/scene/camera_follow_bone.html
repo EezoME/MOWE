@@ -1,0 +1,40 @@
+<html>
+<head>
+    <title>Camera Follow Bone</title>
+    <meta charset='utf-8'>
+    <link rel='stylesheet' type='text/css' href='../style.css'>
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+<h1>Camera Follow Bone</h1>
+<a href='../editor.html'><img src='../images/home.jpg' class='homepage_ico' title="Перейти к главной странице"/></a>
+<div style="text-align: center;"><img src='../images/commands/scene/camera_follow_bone.jpg'></div>
+<p>Команда <b>camera_follow_bone</b> прикрепляет камеру к объекту.</p>
+<p>В строку <a href='../lines/entity.html'>entity</a> вписываем слот объекта.<br>
+    С начала выделяем объект и в настройках справа ищем строку <b>slot_id</b>.<br>
+    <img src='../images/commands/scene/cfb_slot_id.jpg'/><br>
+    Копируем этот слот и вставляем его в строку.<br>
+    <img src='../images/commands/scene/cfb_paste.jpg'/><br>
+    Номер слота записан в шестнадцатеричной системе счисления. После того, как Вы уберёте фокус со строки, редактор
+    конвертирует его в десятичную систему.<br>
+    <img src='../images/commands/scene/cfb_convert.jpg'/></p>
+<p>
+    В строку <a href='../lines/bone.html'>bone</a> вписываем название части "кости" объекта.
+    Для этого нужно вызвать <a href='../others/console.html'>консоль</a> и дать команду отображение этим самых костей.
+    Введите в консоль <b>v_bonesNames 1</b>.<br>
+    <img src='../images/commands/scene/cfb_console.jpg'/><br>
+    В результате отобразятся все кости всех объектов.<br>
+    <img src='../images/commands/scene/cfb_bones_name.jpg' width=100%/><br>
+    Для того, чтобы скрыть названия костей объектов введите в консоле <b>v_bonesNames 0</b>.</p>
+<p>Что делает строка <a href='../lines/fov.html'>fov</a> пока затрудняюсь ответить. По всей видимости тут задаётся
+    отдаление камеры от точки привязки, но при больший числах (530) происходят странные искажения. А при очень больших
+    значениях (1000) камера стоит вверх ногами.</p>
+<p>Вот так выглядит эта команда с заполнеными параметрами:<br>
+    <img src='../images/commands/scene/cfb_fill.png'/><br><br>
+<div style="text-align: center;"><b>Результат</b>:<br><br>
+    <img src='../images/commands/scene/cfb_result.jpg' width=100%/></div>
+</p>
+<iframe class='commands' src='../table_commands.html'></iframe>
+</body>
+</html>

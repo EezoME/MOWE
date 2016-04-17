@@ -1,0 +1,40 @@
+<html>
+<head>
+    <title>Задания миссии</title>
+    <meta charset='utf-8'>
+    <link rel='stylesheet' type='text/css' href='../style.css'>
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+<h1>Задания миссии</h1>
+<a href='../editor.html'><img src='../images/home.jpg' class='homepage_ico' title="Перейти к главной странице"/></a>
+<p>Чтобы игроку было интересней играть, необходимо задать ему цель. Для этого создаются задания.</p>
+<p>Для того, чтобы создать такое задание, необходимо нажать клавишу F9 и в строке <b>tasks</b> открыть редактор заданий.
+    C начала он будет пустым.<br><img src='../images/mission_prop/task_empty.jpg'/><br>
+    Для добавления нового задания нажмите клавишу INSERT или нажмите ПКМ и выберете пункт Add.. <img
+            src='../images/mission_prop/key_add.jpg'/><br>
+    После этого откроется окно ввода названия задания (не путать с текстом задания!).<br><img
+            src='../images/mission_prop/task_input.jpg'/><br>
+    После ввода названия в окно редактора заданий добавятся строки группы, которая называется как Ваше задание.<br><img
+            src='../images/mission_prop/task_task1_empty.jpg'/><br>
+    Далее по строкам. В строке <b>desc</b> указывается текст задания.<br>
+    Строка <b>primary</b> булевская и при значении <b>ИСТИНА</b> данное задание будет отображаться в списке основных в
+    записной книжке, при значении <b>ЛОЖЬ</b> - в списке дополнительных.<br>
+    Строка <b>state</b> указывает начальный статус задания. Имеет 3 значения: <b>hidden</b> - задание не показывается в
+    записной книжке при запуске миссии, <b>completed</b> - задание считается сразу выполненым, <b>failed</b> - задание
+    считается сразу проваленым (в обоих случаях не появляется надписи <font color='green'>Задание выполнено</font> или
+    <font color='red'>Задание провалено</font> при запуске миссии).<br><img
+            src='../images/mission_prop/task_list_state.jpg'/><br>
+    В строке <b>point</b> указывается тег указательной точки, которая указывает на объект задания. Сам объект-точка
+    находится по адресу service/pointer/pointer или pointer_small. Объект-точка по-умолчанию имеет тег pointer, что
+    скрывает её, если задание, где она не используется, не активно (не выделено).<br><img
+            src='../images/mission_prop/task_pointer.jpg'/><br>
+    В строке <b>team</b> указывается команда, которой может быть доступно данное задание (применяется в
+    мультиплеере).<br>
+<div style="text-align: center;"><img src='../images/mission_prop/task_task1_fill.jpg'/></div>
+</p>
+<p>Внедрить задание в игру можно через команду <a href='../scene/task.html'>task</a>.</p>
+<iframe class='f9' src='table_f9.html'></iframe>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<html>
+<head>
+    <title>Типы строк</title>
+    <meta charset='utf-8'>
+    <link rel='stylesheet' type='text/css' href='style.css'>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+<h1>Типы строк</h1>
+<a href='editor.html'><img src='images/home.jpg' class='homepage_ico' title="Перейти к главной странице"/></a>
+<p>Я распределил все строки в командах на 10 типов:</p>
+<p><b>lt1</b> (line type 1) - выпадающий список типа listbox. В списке, помимо прочих параметров, обязательно
+    присутсвует параметр "<b>-</b>", который позволяет не выбирать ни одного из возможных параметров. Пример: строка <a
+            href='lines/state_selector.html'>state</a>.</p>
+<p><b>lt2</b> (line type 2) - выпадающий список типа listbox. В отличии от lt1, не имеет параметра "-", следовательно
+    пользователь обязательно должен указать один из параметров. Пример: строка <a href='lines/operation_player.html'>operation</a>.
+</p>
+<p><b>lt3</b> (line type 3) - выпадающий список типа listbox. В качестве параметров всегда принимает всего три значения:
+    <b>-</b>, <b>on</b>, <b>off</b>. Параметр "<b>-</b>" не меняет значение, <b>on</b> - устанавливает, <b>off</b> -
+    снимает. Пример: строка <a href='lines/weapon_prepare.html'>weapon_prepare</a>.</p>
+<p><b>lt6</b> (line type 6) - выпадающий список типа checkbox. Схожий с listbox, только в этом есть возможность выбрать
+    несколько параметров. Возле каждого параметра стоит квадратик (если он закрашен, значит параметр выбран). В строке
+    отображаются по очереди все выбранные параметры. Пример: строка <a href='lines/drop.html'>drop</a>.</p>
+<p><b>lt7</b> (line type 7) - выпадающий список типа listbox. Во многом аналогичен lt1, только в этом типе значение
+    можно вводить вручную. Наиболее известное примeнение - строка <a href='lines/tag.html'>tag</a>, поскольку даёт
+    возможность приписать тег, которого у юнита нет сейчас, но он его может получить по ходу игры (например, <b><i>explosion</i></b>
+    или <b><i>captured</i></b>).</p>
+<p><b>lb</b> (line boolean) - строка булевского типа, т.е. имеет только два возможных значения: <b>ИСТИНА</b> или <b>ЛОЖЬ</b>.
+    Пример: строка <a href='lines/ignore_captured_by_user.html'>ignore_captured_by_user</a>.</p>
+<p><b>ln</b> (line numeric) - строка числового типа, т.е. в этой строке указывается число. Часто имеет значение
+    по-умолчанию <b>0</b>. Значение <b>-1</b> означает бесконечное количество. Пример: строка <a
+            href='lines/amount.html'>amount</a>.</p>
+<p><b>lt</b> (line text) - строка для ввода текстового значения. Пример: строка <a href='lines/effect.html'>effect</a>.
+</p>
+<p><b>ls</b> (line selection) - строка (с кнопочкой с троиточием) открывает другое окно для указания в нём нужных
+    значений или параметров. Пример: строка <a href='lines/selector.html'>selector</a>.</p>
+<p><b>lts</b> (line text+selection) - строка для ввода текстовго значения с возможностью открыть другое окно для выбора
+    значения вручную. По сути объеденяет свойства строк типа lt и ls. Пример: строка <a href='lines/text.html'>text</a>.
+</p>
+<p></p>
+<p>
+<table width=15% align=center cellpadding=0 cellspacing=1>
+    <caption size=14px>Количество строк по типам</caption>
+    <tr>
+        <td><b>lt1</b></td>
+        <td>32</td>
+    </tr>
+    <tr>
+        <td><b>lt2</b></td>
+        <td>20</td>
+    </tr>
+    <tr>
+        <td><b>lt3</b></td>
+        <td>12</td>
+    </tr>
+    <tr>
+        <td><b>lt6</b></td>
+        <td>5</td>
+    </tr>
+    <tr>
+        <td><b>lt7</b></td>
+        <td>6</td>
+    </tr>
+    <tr>
+        <td><b>lb</b></td>
+        <td>30</td>
+    </tr>
+    <tr>
+        <td><b>ln</b></td>
+        <td>32</td>
+    </tr>
+    <tr>
+        <td><b>lt</b></td>
+        <td>14</td>
+    </tr>
+    <tr>
+        <td><b>ls</b></td>
+        <td>16</td>
+    </tr>
+    <tr>
+        <td><b>lts</b></td>
+        <td>7</td>
+    </tr>
+</table>
+</p>
+<h3 align='center'>Изменения:</h3>
+<ol>
+    <li><p>Тип <b>lt5</b> удален из общего списка.<br><b>lt5</b> (line type 5) - выпадающий список типа listbox. В
+        качестве параметров всегда принимает всего три значения: <b>-</b>, <b>disable</b>, <b>enable</b>. Параметр
+        "<b>-</b>" не меняет свойство, <b>disable</b> - деактивирует, <b>enable</b> - активирует. Пример: строка <a
+                href='lines/ai_move.html'>ai_move</a>.</p></li>
+    <li><p>Тип <b>lt4</b> удален из общего списка.<br><b>lt4</b> (line type 4) или lp (line player) - выпадающий список
+        типа listbox, частный случай строки типа lt2. В качестве параметров всегда принимает список доступных <a
+                href=''>плееров</a> (обычно их 8: от <b>player0</b> до <b>player7</b>). В редакторе всего две строки
+        имеют такой тип: <a href='lines/player.html'>player</a> и <a href='lines/miner.html'>miner</a>.</p></li>
+</ol>
+</body>
+</html>

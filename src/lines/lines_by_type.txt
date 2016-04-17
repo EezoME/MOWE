@@ -1,0 +1,194 @@
+		lines
+	lt1
+Action (action)
+AI Move
+Approach
+Attack
+Cannon
+Control
+Direction
+Fire Mode
+Function
+Impregnability
+Kind
+Miner
+Mode (game_speed)
+Mode (squad_state)
+Move Mode
+Name (reinforcement)
+Name (scenario)
+Name (set_clip)
+Name (task)
+Player
+Result
+Say
+Speed
+State (actor_component)
+State (селектор)
+Status
+Type (if, while)
+Type (movement)
+Type (селектор)
+Unmasking
+Var
+Zone
+
+	lt2
+Action (inventory)
+Action (linker)
+Action (mine_state)
+Action (waypoint)
+Burst Mode
+Count (entity_manager)
+Mode (actor_to_cover)
+Mode (emit)
+Mode (event)
+Mode (if, while)
+Op
+Operation (player)
+Operation (reinforcement)
+Operation (squad)
+Place (linker)
+Quant Mode
+Source (waypoint)
+State (task)
+Volume (music)
+Who
+
+	lt3
+Backward
+Discovered
+Enable
+Examined
+Follow Commander
+Forward
+Guard
+Inactive
+Lock
+No Advance
+No Retreat
+Weapon Prepare
+
+	lt6
+add_ables
+Covers
+Drop
+Flags
+Remove
+
+	lt7
+Name (squad)
+Squad
+Tag
+Tag Add
+Tag Remove
+Value
+
+	ln
+Add
+Advance Ratio
+Altitude
+Amount
+Attack Altitude
+CircleDelay
+Count
+Delay
+Energy
+Entity
+Fade
+Forward
+Fov
+Health
+Interval
+Max Speed kph
+Mids
+Move Radius
+Radius
+Retreat Ratio
+Score
+Set
+Speed kph
+Speed
+Target Waypoint
+Time
+TotalTime
+Turn
+Up
+Volume (action)
+Waypoint (строка)
+Waypoint To Attack
+
+	lb
+Clear Queue
+Clone
+Context
+Deviate
+Die
+Disable Cancel
+Do Not Restore Camera
+Do Not Store Camera
+Enabled
+Force Auto Complete
+Force Placement
+Ground
+Hide
+Ignore Captured By User
+Ignore Z
+In Camera
+Keep Orientation
+Loop
+Make Enemies Forget
+Make Squad
+Move From Back
+Nearest
+Not Synced
+On
+Only Weapon
+Random Weapon
+Resume
+Smooth Begin
+Smooth End
+Stop All
+
+	lt
+Animation
+Bone
+Collage
+Component
+Copy Squad
+Effect
+Event (mp_event)
+Name (environment)
+Name Squad
+Place (board)
+Slot Name
+Team
+Text (con)
+Video
+
+	ls
+Call
+Crew
+Enemies
+Entities
+Entity (spawn)
+Event
+Event On Cancel
+Event On Next
+Name (trigger)
+Selector
+Start
+Stop
+Target
+Trigger On Cancel
+Trigger On Next
+Vehicle
+
+	lts
+Color
+Item
+Message
+Name (sound)
+Sound
+Text
+Title

@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>Objective Progress</title><meta charset='utf-8'>
+<link rel='stylesheet' type='text/css' href='../style.css'>
+<link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+<h1>Objective Progress</h1>
+<a href='../editor.html'><img src='../images/home.jpg' class='homepage_ico' title="Перейти к главной странице" /></a>
+<center><img src='../images/commands/other/objective_progress.jpg'></center>
+<p>Команда <b>objective_progress</b> выводит на экран информацию о прогрессе миссии. Например, загрузка вагона в процентах как в миссии Эвакуация (ВТВ2:БПО) или отправка грузов в формате i из n.</p>
+<p>По строкам:
+<ul>
+<li><a href='../lines/hide.html'>hide</a> - скрывает прогресс</li>
+<li><a href='../lines/set.html'>set</a> - устанавливает значение прогресса</li>
+<li><a href='../lines/add_objective_progress.html'>add</a> - добавляе до текущего прогресса заданое число</li>
+<li><a href='../lines/title.html'>title</a> - описание прогресса</li>
+</ul></p>
+<p>Чтобы можно было обновлять строку прогресса простым инкрементом, нужно создать в текстовом редакторе текст следующего формата: "Заргузка %1%" (без кавычек). Таким образом это расценивается как форматированый вывод и значение будет меняться. Устанавливается начальное значение через строку <b>set</b>, а добавляется через <b>add</b>.</p>
+<iframe class='commands' src='../table_commands.html' />
+</body>
+</html>

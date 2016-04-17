@@ -1,0 +1,101 @@
+<html>
+<head>
+    <title>Элементы миссии</title>
+    <meta charset='utf-8'>
+    <link rel='stylesheet' type='text/css' href='style.css'>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+<h1>Элементы миссии</h1>
+<a href='editor.html'><img src='images/home.jpg' class='homepage_ico' title="Перейти к главной странице"/></a>
+<h2 align=center>Объект</h2>
+<p><b>Объект</b> - любое тело, которое может поставиться на карту через вкладку <a href='others/entity.html'>entity</a>.<br><img
+        src='images/object.jpg'/></p>
+<h2 align=center>Юнит</h2>
+<p><b>Юнит</b> - объект, которым непосредственно может управлять игрок (пехота, техника, орудия и т.д.).<br><img
+        src='images/unit.jpg'/></p>
+<h2 align=center>Мид</h2>
+<p><b>Мид</b> - уникальный номер юнита, присваемый ему при создании. Указать мид - самый точный способ указать на юнита.<br>
+    Отображение мидов включается сочетанием клавиш Alt+I. <img src='images/mid.jpg'/></p>
+<h2 align=center>Тег</h2>
+<p><b>Тег</b> - метка, присваимая объекту для его принадлежности к некой группе. Например, если Вам нужно указать
+    несколько юнитов, проще будет поставить им общий тег, нежели перечислять их по мидам. А в случае объектов, не
+    имеющих мида, тег - единственный способ обозначить объект.<br>
+    Также теги могут присваиватся по ходу игры. Например, при уничтожении объекта ему может быть присвоен тег
+    <i>crashed</i> (разрушен для не юнитов), <i>destroyed</i> (разрушен для юнитов) или <i>burned</i> (сожжён).<br>
+    Такой тег как <i>hidden</i> скрывает объекты при запуске сценария и раскрывает их только когда они начинают
+    действовать через <a href='commands.html'>команды</a> (например, юнит был скрыт и по комманде начинает идти по
+    вейпоинтам).<br>
+    Отображение тегов включается сочетанием клавиш Alt+T. <img src='images/tag.jpg'/><br>
+    <a href='others/tag_list.html'>Перечень зарезервированых тегов</a>.</p>
+<h2 align=center>Вейпоинт</h2>
+<p><b>Вейпоинт</b> - точка с уникальным номером, которая может быть частью пути. Если на вейпоинте есть <a
+        href='commands.html'>команды</a>, он окрашивается в красный оттенок.<br><img src='images/waypoint_.jpg'/></p>
+<h2 align=center>Путь</h2>
+<p><b>Путь</b> - массив вейпоинтов, связаных между собой в определённом порядке.<br><img src='images/way.jpg'/></p>
+<h2 align=center>Зона</h2>
+<p><b>Зона</b> - область игрового пространства. Обычно в ней должно происходить что-то интересное раз уж нам
+    понадобилось выделить именно этот участок поверхности.<br><img src='images/zone.jpg'/></p>
+<h2 align=center>Плеер</h2>
+<p><b>Плеер</b> - сторона, которой пренадлежит тот или иной юнит. Главным плеером считается тот, которым играет игрок.
+    Плеера могут быть друг другу врагами, союзниками или нейтральными. Цвет текущего плеера указывается квадратиком в
+    верхнем левом углу экрана. <img src='images/player.jpg'/></p>
+<h2 align=center>Ролик</h2>
+<p><b>Ролик</b> - видеофайл или видео, сделанное в редакторе (во вкладке <a href='others/camera.html'>camera</a>).</p>
+<br>
+<p><b></b> - </p><br>
+<table border=2 cellpadding=3px bordercolor=green bgcolor=lightgreen width=450px align=center>
+    <tr>
+        <td align=center><b>Элемент</b></td>
+        <td align=center><b>Где встречается/применяется</b></td>
+    </tr>
+    <tr>
+        <td>Мид</td>
+        <td>
+            <a href='selectors/selectors.html'>Селекторы всех типов</a> •
+            вкладка <a href='others/zone.html'>зона</a>
+        </td>
+    </tr>
+    <tr>
+        <td>Тег</td>
+        <td>
+            <a href='selectors/selectors.html'>Селекторы всех типов</a> •
+            вкладка <a href='others/zone.html'>зона</a> •
+            <a href='mission_prop/tasks.html'>Задания</a> •
+            <a href='mission_prop/reinforcements.html'>Подкрепления</a>
+        </td>
+    </tr>
+    <tr>
+        <td>Зона</td>
+        <td>
+            <a href='selectors/selectors.html'>Селекторы всех типов</a> •
+            вкладка <a href='others/zone.html'>зона</a> •
+            командах, где есть строка <a href='lines/zone.html'>zone</a> •
+        </td>
+    </tr>
+    <tr>
+        <td>Вейпоинт</td>
+        <td>
+            вкладка <a href='others/waypoint.html'>waypoint</a> •
+            командах, где есть строка <a href='lines/waypoint.html'>waypoint</a> •
+            <a href='mission_prop/reinforcements.html'>Подкрепления</a>
+        </td>
+    </tr>
+    <tr>
+        <td>Плеер</td>
+        <td>
+            <a href='selectors/selectors.html'>Селекторы всех типов</a> •
+            команда <a href='actor/player.html'>player</a> •
+            <a href='mission_prop/main.html'>Свойства миссии</a>
+        </td>
+    </tr>
+    <tr>
+        <td>Ролик</td>
+        <td>
+            команда <a href='scene/scenario.html'>scenario</a>
+        </td>
+    </tr>
+</table>
+</body>
+</html>

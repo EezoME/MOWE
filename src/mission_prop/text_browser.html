@@ -1,0 +1,51 @@
+<html>
+<head>
+    <title>Текстовый браузер</title>
+    <meta charset='utf-8'>
+    <link rel='stylesheet' type='text/css' href='../style.css'>
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+<h1>Текстовый браузер</h1>
+<a href='../editor.html'><img src='../images/home.jpg' class='homepage_ico' title="Перейти к главной странице"/></a>
+<p>Для того, чтобы текст отображался как диалог, его необходимо создать в <b><u>текстовом браузере</u></b> (<b><u>text
+    browser</u></b>). Также, текстовый браузер (далее "ТБ") позволяет наглядно оценить текст на читабельность, наличие
+    ошибок и т.д. Все диалоги и тексты бриффингов и эпилогов рекомендуется записывать в ТБ. Разработчики прописывают в
+    ТБ даже тексты <a href='tasks.html'>заданий</a> и <a href='reinforcements.html'>подкреплений</a>.</p>
+<p>Существует много способов открыть ТБ. Я открыл ТБ через F9 -> <b>texts</b>. Также, ТБ можно открыть в каждой команде,
+    где могут использоваться его тексты.<br>
+<div style="text-align: center;"><img src='../images/mission_prop/text_browser.jpg'/></div>
+</p>
+<p>Интерфейс ТБ следующий. Слева отображаются все созданные тексты. Три управляющие кнопки снизу позволяют Добавить,
+    Удалить или Переименовать текст.<br>
+    Большая область справа показывает текст целиком, а в строчке под ней вводится непосредственно сам текст.<br>
+    Чтобы сохранить изменения, внесённые непосредственно в строку, необходимо нажать клавишу <b>ENTER</b>, иначе при
+    клике где-либо (за пределами строчки) все изменения утратятся и придётся заново вводить текст.<br>
+    После этого нажмите на кнопку <b>Save</b> и все изменения в тексте сохранятся. Кнопка <b>Undo</b> отменяет последние
+    изменения (если Вы нажали ENTER).<br>
+    Нажмите <b>OК</b>, чтобы выйти из ТБ, сохранив все изменения или <b>Отмена</b>, чтобы выйти без сохранения.</p>
+<p id='reserved_words'>В ТБ также есть зарегистрированные имена текстов, которые отвечают за интерфейс миссии:<br>
+    Текст с именем <b>date</b> указывает дату событий данной миссии (например, освобождение Николаева произошло 28 марта
+    1944 года). На скриншоте указана дата написания этой страницы.<br><img
+            src='../images/mission_prop/tb_date.jpg'/><br>
+    Текст с именем <b>place</b> указывает место, где происходят действия (например, Николаев).<br><img
+            src='../images/mission_prop/tb_place.jpg'/><br>
+    Текст с именем <b>name</b> указывает название миссии, которое отображается в меню кампании.<br><img
+            src='../images/mission_prop/tb_name.jpg'/><br>
+    Текст с именем <b>name_big</b> указывает название миссии, которое отображается при загрузке миссии. Обычно name и
+    name_big имеют одинаковый текст.<br><img src='../images/mission_prop/tb_name_big.jpg'/><br>
+    Текст с именем <b>outro_completed</b> содержит текст, который будет отображаться в итоговом окне Победы.<br><img
+            src='../images/mission_prop/tb_outro_completed.jpg'/><br>
+    Текст с именем <b>outro_failed</b> содержит текст, который будет отображаться в итоговом окне Проигрыша.<br><img
+            src='../images/mission_prop/tb_outro_failed.jpg'/></p>
+<p>Текстовый браузер можно открыть в следующий командах: <a href='../actor/talk.html'>talk</a> (строка <a
+        href='../lines/text.html'>text</a>), <a href='../other/objective_progress.html'>objective_progress</a> (<a
+        href='../lines/title.html'>title</a>), <a href='../scene/gameover.html'>gameover</a> (<a
+        href='../lines/message.html'>message</a>), <a href='../scene/scenario.html'>scenario</a> (<a
+        href='../lines/text.html'>text</a>), <a href='../scene/timer.html'>timer</a> (<a href='../lines/title.html'>title</a>)
+    а также через F9 в <a href='tasks.html'>заданиях</a> (desc) и <a href='reinforcements.html'>подкреплениях</a> (text,
+    hint).</p>
+<iframe class='f9' src='table_f9.html'></iframe>
+</body>
+</html>

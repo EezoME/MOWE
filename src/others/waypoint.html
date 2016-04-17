@@ -1,0 +1,34 @@
+<html>
+<head>
+<title>Waypoint</title><meta charset='utf-8'>
+<link rel='stylesheet' type='text/css' href='../style.css'>
+<link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+<h1>Waypoint</h1>
+<a href='../editor.html'><img src='../images/home.jpg' class='homepage_ico' title="Перейти к главной странице" /></a>
+<p>Первичные операции над <a href='../elements.html'>вейпоинтами</a> проводятся во вкладке <b><u>вейпоинт</b></u> (<b><u>waypoint</u></b>).<br><center><img src='../images/others/waypoint.jpg' /></center></p>
+<p>В окошке <b>Groups</b> можно <b>Добавить</b> (<b>Add...</b>), <b>Переименовать</b> (<b>Rename</b>), <b>Удалить</b> (<b>Delete</b>) или <b>Переместить</b> (<b>MoveTo</b>) группу вейпоинтов. Строчка Show all указывает, следует ли показывать вейпоинты со всех групп одновременно.<br>
+Для добавления новой группы вейпоинтов нажмите кнопку <b>Add...</b>. В появившимся окне введите название группы вейпоинтов.
+<br><img src='../images/others/waypoint_input.jpg' /><br>
+Для добавление вейпа нажмите кнопку <b>Add</b> или клавишу INSERT. ЛКМ устанавливает вейпоинт на место.<br>
+Кнопка или клавиша <b>Delete</b> удаляет выделенный вейпоинт.<br>
+Строчка <b>Autolink</b> автоматически соединяет выделенный вейп с новым.<br>
+Кнопка <b>Link</b> соединяет выделенные вейпы в порядке, указаном в поле <b>Showpath:</b> (нажмите эту кнопку, чтобы увидеть порядок вейпов).<br><img src='../images/others/waypoint_selected_two.jpg' /><br>
+Кнопка <b>Unlink</b> разъединяет вейпы.<br>
+Кнопка <b>Unit:</b> открывает окно ввода <a href='../elements.html'>мида</a>, который каким-то образом связывается с вейпами?? (надо попробовать)<br><img src='../images/others/waypoint_input_mid.jpg' /><br>
+При выделении вейпа в окне <b>Properties for 'waypoint'</b> указываются его свойства.<br><img src='../images/others/waypoint_added.jpg' /><br>
+<b>Position</b> - координаты вейпоинта.<br>
+<b>Uid</b> - порядковый номер вейпа.<br>
+<b>Radius</b> - радиус (синий круг вокруг вейпа).<br>
+<b>Offset</b> - смещение?<br><br>
+
+В окошке <b>имя_группы_вейпов [номер_вейпа]</b> указываются <a href='../commands.html'>команды</a>, которые выполняются когда юнит достигает данный вейпоинт и условия прохода.<br><img src='../images/others/waypoint_transitions.jpg' /><br>
+В окне <b>Transitions</b> указываются все <a href='../elements.html'>пути</a>, связанные с данным вейпоинтом.<br>
+В поле <b>Weight</b> указывается вес выделенного пути. Чем он выше, тем больше юнитов выберут именно этот путь, если прохождение через этот вейп не настроено какими-либо командами или фильтром.<br>
+Кнопка <b>Filter</b> открывает окно фильтра, где можно настроить параметры прохождения, фильтруя юнитов по <a href='../elements.html'>миду</a> или <a href='../elements.html'>тегу</a>. Строка <b>Except filtered by</b> говорит, что заданым юнитам нельзя пройти по текущему пути.
+<br><img src='../images/others/waypoint_transition_filter.jpg' /></p>
+<iframe class='f3' src='table_f3.html' />
+</body>
+</html>

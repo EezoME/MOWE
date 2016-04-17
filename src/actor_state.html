@@ -1,0 +1,65 @@
+<html>
+<head>
+    <title>Actor State</title>
+    <meta charset='utf-8'>
+    <link rel='stylesheet' type='text/css' href='style.css'>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+<h1>Actor State</h1>
+<a href='editor.html'><img src='images/home.jpg' class='homepage_ico' title="Перейти к главной странице"/></a>
+<div style="text-align: center;"><img src='images/commands/FUC/actor_state.jpg'></div>
+<p>Команда <b>actor_state</b> позволяет изменить первичные параметры юнита. Большинство настроек, указанных здесь, можно
+    указать в <a href='others/entity.html'>настройках юнита справа</a>.</p>
+<p>А теперь по строкам:
+<ul>
+    <li><a href='lines/selector.html'>selector</a> - указывает на юнита</li>
+    <li><a href='lines/drop.html'>drop</a> - дополнительный параметр для селектора</li>
+    <li><a href='lines/control.html'>control</a> - указывает, кому подконтрольный данный юнит (ИИ или игроку)</li>
+    <li><a href='lines/fire_mode.html'>fire_mode</a> - режим стрельбы</li>
+    <li><a href='lines/move_mode.html'>move_mode</a> - режим передвижения</li>
+    <li><a href='lines/move_radius.html'>move_radius</a> - радиус передвижения</li>
+    <li><a href='lines/weapon_prepare.html'>weapon_prepare</a> - достать/спрятать оружие</li>
+    <li><a href='lines/ai_move.html'>ai_move</a> - разрешает ИИ управлять юнитом, подконтрольным игроку</li>
+    <li><b>movement</b> - настройки передвижения</li>
+    <ul>
+        <li><a href='lines/speed.html'>speed</a> - скорость по качественной шкале</li>
+        <li><a href='lines/kind.html'>kind</a> - вид передвижения</li>
+        <li><a href='lines/speed_kph.html'>speed_kph</a> - скорость по количественной шкале (км/ч)</li>
+        <li><a href='lines/max_speed_kph.html'>max_speed_kph</a> - максимальная скорость (км/ч)</li>
+        <li><a href='lines/type_movement.html'>type</a> - тип передвижения</li>
+        <li><a href='lines/forward.html'>forward</a> и <a href='lines/backward.html'>backward</a> - слияет на склонность
+            юнита занимать передний или задний фланги
+        </li>
+    </ul>
+    <li><b>human</b> - параметры, примеными только для пехоты</li>
+    <ul>
+        <li><a href='lines/health.html'>health</a> - запас здоровья (100 - по-умолчанию максимально возможное число
+            единиц здоровья для пехотинца)
+        </li>
+        <li><a href='lines/energy.html'>energy</a> - запас энергии (100 - по-умолчанию максимально возможное число
+            единиц энергии для пехотинца)
+        </li>
+    </ul>
+    <li><b>ai</b> - настройки для ИИ</li>
+    <ul>
+        <li><a href='lines/no_advance.html'>no_advance</a> - юнит не будет сам наступать</li>
+        <li><a href='lines/no_retreat.html'>no_retreat</a> - юнит не будет сам отступать</li>
+        <li><a href='lines/advance_ratio.html'>advance_ratio</a> - коэфициент наступления</li>
+        <li><a href='lines/retreat_ratio.html'>retreat_ratio</a> - коэфициент отступления</li>
+        <li><a href='lines/follow_commander.html'>follow_commander</a> - следовать ли за коммандиром или оставить его в
+            покое
+        </li>
+        <li><a href='lines/make_enemies_forget.html'>make_enemies_forget</a> - забывать про врагов, если они вне поля
+            зрения
+        </li>
+    </ul>
+    <li><a href='lines/cannon.html'>cannon</a> - параметры для орудия</li>
+    <li><a href='lines/unmasking.html'>unmasking</a> - способы раскрытия юнита</li>
+</ul>
+</p>
+<iframe class='commands' src='table_commands.html'></iframe>
+</body>
+</html>

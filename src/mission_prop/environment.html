@@ -1,0 +1,114 @@
+<html>
+<head>
+    <title>Окружающая среда</title>
+    <meta charset='utf-8'>
+    <link rel='stylesheet' type='text/css' href='../style.css'>
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+<h1>Окружающая среда (страница не закончена)</h1>
+<a href='../editor.html'><img src='../images/home.jpg' class='homepage_ico' title="Перейти к главной странице"/></a>
+<p>В редакторе есть возможность настоить погодные условия, освещённость и т.д. Всё это в совокупности называется <b
+        style="text-decoration: underline;">окружающей
+            средой</b> (<b style="text-decoration: underline;">environment</b>).<br>
+<div style="text-align: center;"><img src='../images/mission_prop/environment1.jpg'/><img src='../images/mission_prop/environment2.jpg'/>
+</div>
+</p>
+<p>Справа находится список доступных сред.<br>
+    В свойствах можно настроить следующие параметры:
+<ul>
+    <li><b>light</b> - свет</li>
+    <ul>
+        <li><b>direction</b> - направление</li>
+        <li><b>ambient</b> - внешней среды</li>
+        <li><b>diffuse</b> - рассеивания</li>
+        <li><b>specular</b> - зеркальный</li>
+        <li><b>lightsIntensity</b> - интенсивность источников света</li>
+        <li><b>night</b> - ночь</li>
+        <li><b>night_vision</b> - степень видимости ночью</li>
+        <li><b>color_saturation</b> - насыщенность цвета (1 - обычная насыщенность)</li>
+        <li><b>humans_light</b> - свет от человека?</li>
+        <ul>
+            <li><b>user_ambient</b> - цвет внешней серды для игрока</li>
+            <li><b>user_diffuse</b> - цвет рассеивания для игрока</li>
+            <li><b>ally_ambient</b> - цвет внешней серды для союзника</li>
+            <li><b>ally_diffuse</b> - цвет рассеивания для союзника</li>
+            <li><b>enemy_ambient</b> - цвет внешней серды для врага</li>
+            <li><b>enemy_diffuse</b> - цвет рассеивания для врага</li>
+        </ul>
+        <li><b>vehicles_light</b> - огни транспортных средств</li>
+        <ul>
+            <li><b>user_ambient</b> - цвет внешней серды для игрока</li>
+            <li><b>user_diffuse</b> - цвет рассеивания для игрока</li>
+            <li><b>ally_ambient</b> - цвет внешней серды для союзника</li>
+            <li><b>ally_diffuse</b> - цвет рассеивания для союзника</li>
+            <li><b>enemy_ambient</b> - цвет внешней серды для врага</li>
+            <li><b>enemy_diffuse</b> - цвет рассеивания для врага</li>
+        </ul>
+    </ul>
+    <li><b>shadow</b> - тень</li>
+    <ul>
+        <li><b>alpha</b> - альфа? (главный наверное)??</li>
+        <li><b>color</b> - цвет</li>
+    </ul>
+    <li><b>wind</b> - ветер</li>
+    <ul>
+        <li><b>speed</b> - скорость</li>
+        <li><b>amplitude</b> - амплитуда</li>
+    </ul>
+    <li><b>haze</b> - туман (не "туман войны")</li>
+    <ul>
+        <li><b>enable</b> - включён</li>
+        <li><b>color</b> - цвет</li>
+        <li><b>start</b> - начало?</li>
+        <li><b>end</b> - конец?</li>
+    </ul>
+    <li><b>sky</b> - небо</li>
+    <ul>
+        <li><b>enable</b> - включено</li>
+        <li><b>texture</b> - текстура</li>
+        <li><b>size</b> - размер (1 1 - обычный размер)</li>
+        <li><b>scrollSpeed</b> - скорость прокрутки?</li>
+        <li><b>axis</b> - ось</li>
+        <li><b>location</b> - позиция</li>
+        <li><b>globalEnvironment</b> - глобальная среда</li>
+    </ul>
+    <li><b>cloudsonwater</b> - облака, солнце и вода</li>
+    <ul>
+        <li><b>enable</b> - включено</li>
+        <li><b>texture</b> - текстуры</li>
+        <li><b>size</b> - размер</li>
+        <li><b>scrollSpeed</b> - скорость прокрутки?</li>
+        <li><b>windSpeed</b> - скорость ветра</li>
+    </ul>
+    <li><b>weather</b> - погода</li>
+    <ul>
+        <li><b>enable</b> - включено</li>
+        <li><b>density</b> - плотность</li>
+        <li><b>fx</b> - эффект (blizzard - метель, rain - дождь, rain_night - ночной дождь (темнее чем просто дождь),
+            snow - снег, snow_flakes - хлопья снега)
+        </li>
+        <li><b>sound</b> - звук</li>
+    </ul>
+    <li><b>thunder</b> - гром</li>
+    <ul>
+        <li><b>enable</b> - включено</li>
+        <li><b>interval</b> - интервал</li>
+        <li><b>color</b> - цвет</li>
+        <li><b>sound</b> - звук</li>
+    </ul>
+    <li><b>video_overlay</b> - наложение видео</li>
+    <ul>
+        <li><b>on</b> - включено</li>
+        <li><b>file</b> - файл</li>
+        <li><b>color</b> - цвет</li>
+    </ul>
+</ul>
+</p>
+<p>Также открыть окно с окружающей средой можно нажав клавишу F6.<br>
+    Установить или изменить окрущающую среду можно через команду <a href='../scene/environment.html'>environment</a>.
+</p>
+<iframe class='f9' src='table_f9.html'></iframe>
+</body>
+</html>
