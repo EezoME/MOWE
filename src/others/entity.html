@@ -1,101 +1,126 @@
 <html>
 <head>
-<title>Entity</title><meta charset='utf-8'>
-<link rel='stylesheet' type='text/css' href='../style.css'>
-<link rel="icon" href="../images/favicon.ico" type="image/x-icon">
-<link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+    <title>Entity</title>
+    <meta charset='utf-8'>
+    <link rel='stylesheet' type='text/css' href='../style.css'>
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
 </head>
 <body>
 <h1>Entity</h1>
-<a href='../editor.html'><img src='../images/home.jpg' class='homepage_ico' title="Перейти к главной странице" /></a>
-<p>Вкладка entity есть и в РРК и в РРМ. В ней можно поставить <a href='../elements.html'>объект</a> на карту. Также, при выделении объекта показываются его свойства.<br><img src='../images/others/entity_p1.jpg' align=right /><br>
-Разберёмся по строкам (в качестве примера был выделен русский офицер):
+<a href='../editor.html'><img src='../images/home.jpg' class='homepage_ico' title="Перейти к главной странице"/></a>
+<p>Вкладка entity есть и в РРК и в РРМ. В ней можно поставить <a href='../elements.html'>объект</a> на карту. Также, при
+    выделении объекта показываются его свойства.<br/>
+    <img src='../images/others/entity_p1.jpg' align=right /><br/>
+    Разберёмся по строкам (в качестве примера был выделен русский офицер):
 <ul>
-<li><b>mid</b> - мид объекта</li>
-<li><b>desc</b> - описание объекта (которое видно при наведении в РПС)</li>
-<li><b>ables</b> - способности юнита. Подробно список описан <a href='../lines/add_ables.html'>тут</a></li>
-<li><b>player</b> - плеер юнита</li>
-<li><b>mask_player</b> - замаскированый плеер (этот плеер может быть вражеским, тогда враги будут считать его как своего пока не раскроют)</li>
-<li><b>unmasking</b> - кто может раскрыть юнита. Подробно список описат <a href='../lines/unmasking.html'>тут</a></li>
-<li><b>brain</b> - мозги юнита (описывают его поведение)</li>
-<ul>
-<li><b>fix_inventory</b> - фиксированный инвентарь</li>
-<li><b>control</b> - кем управляется (см. строка <a href='../lines/control.html'>control</a> )</li>
-<li><b>fire_mode</b> - режим стрельбы (см. строка <a href='../lines/fire_mode.html'>fire_mode</a> )</li>
-<li><b>move_mode</b> - режим передвижения (см. строка <a href='../lines/move_mode.html'>move_mode</a>)</li>
-<li><b>move_radius</b> - радиус передвижения (см. строка <a href='../lines/move_radius.html'>move_radius</a>)</li>
-<li><b>ai_move</b> - управление компьютером (см. строка <a href='../lines/ai_move.html'>ai_move</a>)</li>
-<li><b>no_advance</b> - не наступать (см. строка <a href='../lines/no_advance.html'>no_advance</a>)</li>
-<li><b>no_retreat</b> - не отступать (см. строка <a href='../lines/no_retreat.html'>no_retreat</a>)</li>
-<li><b>advance_ratio</b> - рейтинг наступления (см. строка <a href='../lines/advance_ratio.html'>advance_ratio</a>)</li>
-<li><b>retreat_ratio</b> - рейтинг отступления (см. строка <a href='../lines/retreat_ratio.html'>retreat_ratio</a>)</li>
-</ul>
-<li><b>name</b> - имя объекта</li>
-<li><b>slot_id</b> - слот объкта</li>
-<li><b>constrain</b> - привязка (обычно к земле)</li>
-<li><b>position</b> - позиция</li>
-<ul>
-<li><b>x</b> - первая координата</li>
-<li><b>y</b> - вторая координата</li>
-<li><b>z</b> - третья координата</li>
-</ul>
-<li><b>xform</b> - дополнительные оси</li>
-<ul>
-<li><b>zL</b> - угол по горизонтальной площади</li>
-<li><b>y</b> - угол по вертикальной площади</li>
-<li><b>zW</b> - вращение на заданый угол по горизонтальной площади от текущего значения (при этом значение в zL не меняется)
-<img src='../images/others/entity_p2.jpg' align=right /></li>
-<li><b>scale</b> - масштабирование объекта</li>
-</ul>
-<li><b>view</b> - вид</li>
-<ul>
-<li><b>stamp</b> - печатки (если можно так выразиться)</li>
-<ul>
-<li><b>decal</b> - отображение</li>
-<li><b>order</b> - приоритет отображения</li>
-</ul>
-<li><b>shadow</b> - тень</li>
-<li><b>textmods</b> - текстуры</li>
-<li><b>opacity</b> - степень темноты</li>
-<li><b>no_ground</b> - без привязки?</li>
-<li><b>color</b> - цвет (white - обычный)</li>
-<li><b>saturation</b> - насыщенность</li>
-<li><b>ingore_saturation</b> - игнорировать строку saturation</li>
-<li><b>z_clip_visibility</b> - если ИСТИНА: при близости камеры объект становится полупрозрачным</li>
-</ul>
-<li><b>fogable</b> - склонность к туману войны?</li>
-<li><b>storeable</b> - возможность переносить объект в другую миссию (наверное)</li>
-<li><b>mass</b> - масса</li>
-<li><b>discovered</b> - открыт ли объект (см. строку <a href='../lines/discovered.html'>discovered</a> )</li>
-<li><b>impregnability</b> - неуязвимость (см. строку <a href='../lines/impregnability.html'>impregnability</a> )</li>
-<li><b>tags</b> - теги объекта</li>
-<li><b>simulation_ables</b> - симуляция способностей</li>
-<li><b>vitality</b> - стойкость</li>
-<ul>
-<li><b>hmax</b> - максимальный запас здоровья</li>
-<li><b>hcurrect</b> - текущий запас здоровья</li>
-<li><b>energy</b> - запас энергии</li>
-</ul>
-<li><b>stuff</b> - ??</li>
-<li><b>breed</b> - <a href='../mission_prop/breeds.html'>брид</a></li>
-<li><b>skin</b> - скин</li>
-<li><b>name</b> - имя персонажа</li>
-<ul>
-<li><b>first</b> - Фамилия</li>
-<li><b>last</b> - Имя</li>
-<li><b>unique</b> - уникальные Имя и Фамилия</li>
-</ul>
+    <li><b>mid</b> - мид объекта</li>
+    <li><b>desc</b> - описание объекта (которое видно при наведении в РПС)</li>
+    <li><b>ables</b> - способности юнита. Подробно список описан <a href='../lines/add_ables.html'>тут</a></li>
+    <li><b>player</b> - плеер юнита</li>
+    <li><b>mask_player</b> - замаскированый плеер (этот плеер может быть вражеским, тогда враги будут считать его как
+        своего пока не раскроют)
+    </li>
+    <li><b>unmasking</b> - кто может раскрыть юнита. Подробно список описат <a href='../lines/unmasking.html'>тут</a>
+    </li>
+    <li><b>brain</b> - мозги юнита (описывают его поведение)</li>
+    <ul>
+        <li><b>fix_inventory</b> - фиксированный инвентарь</li>
+        <li><b>control</b> - кем управляется (см. строка <a href='../lines/control.html'>control</a> )</li>
+        <li><b>fire_mode</b> - режим стрельбы (см. строка <a href='../lines/fire_mode.html'>fire_mode</a> )</li>
+        <li><b>move_mode</b> - режим передвижения (см. строка <a href='../lines/move_mode.html'>move_mode</a>)</li>
+        <li><b>move_radius</b> - радиус передвижения (см. строка <a href='../lines/move_radius.html'>move_radius</a>)
+        </li>
+        <li><b>ai_move</b> - управление компьютером (см. строка <a href='../lines/ai_move.html'>ai_move</a>)</li>
+        <li><b>no_advance</b> - не наступать (см. строка <a href='../lines/no_advance.html'>no_advance</a>)</li>
+        <li><b>no_retreat</b> - не отступать (см. строка <a href='../lines/no_retreat.html'>no_retreat</a>)</li>
+        <li><b>advance_ratio</b> - рейтинг наступления (см. строка <a
+                href='../lines/advance_ratio.html'>advance_ratio</a>)
+        </li>
+        <li><b>retreat_ratio</b> - рейтинг отступления (см. строка <a
+                href='../lines/retreat_ratio.html'>retreat_ratio</a>)
+        </li>
+    </ul>
+    <li><b>name</b> - имя объекта</li>
+    <li><b>slot_id</b> - слот объкта</li>
+    <li><b>constrain</b> - привязка (обычно к земле)</li>
+    <li><b>position</b> - позиция</li>
+    <ul>
+        <li><b>x</b> - первая координата</li>
+        <li><b>y</b> - вторая координата</li>
+        <li><b>z</b> - третья координата</li>
+    </ul>
+    <li><b>xform</b> - дополнительные оси</li>
+    <ul>
+        <li><b>zL</b> - угол по горизонтальной площади</li>
+        <li><b>y</b> - угол по вертикальной площади</li>
+        <li><b>zW</b> - вращение на заданый угол по горизонтальной площади от текущего значения (при этом значение в zL
+            не меняется)
+            <img src='../images/others/entity_p2.jpg' align=right/></li>
+        <li><b>scale</b> - масштабирование объекта</li>
+    </ul>
+    <li><b>view</b> - вид</li>
+    <ul>
+        <li><b>stamp</b> - печатки (если можно так выразиться)</li>
+        <ul>
+            <li><b>decal</b> - отображение</li>
+            <li><b>order</b> - приоритет отображения</li>
+        </ul>
+        <li><b>shadow</b> - тень</li>
+        <li><b>textmods</b> - текстуры</li>
+        <li><b>opacity</b> - степень темноты</li>
+        <li><b>no_ground</b> - без привязки?</li>
+        <li><b>color</b> - цвет (white - обычный)</li>
+        <li><b>saturation</b> - насыщенность</li>
+        <li><b>ingore_saturation</b> - игнорировать строку saturation</li>
+        <li><b>z_clip_visibility</b> - если ИСТИНА: при близости камеры объект становится полупрозрачным</li>
+    </ul>
+    <li><b>fogable</b> - склонность к туману войны?</li>
+    <li><b>storeable</b> - возможность переносить объект в другую миссию (наверное)</li>
+    <li><b>mass</b> - масса</li>
+    <li><b>discovered</b> - открыт ли объект (см. строку <a href='../lines/discovered.html'>discovered</a> )</li>
+    <li><b>impregnability</b> - неуязвимость (см. строку <a href='../lines/impregnability.html'>impregnability</a> )
+    </li>
+    <li><b>tags</b> - теги объекта</li>
+    <li><b>simulation_ables</b> - симуляция способностей</li>
+    <li><b>vitality</b> - стойкость</li>
+    <ul>
+        <li><b>hmax</b> - максимальный запас здоровья</li>
+        <li><b>hcurrect</b> - текущий запас здоровья</li>
+        <li><b>energy</b> - запас энергии</li>
+    </ul>
+    <li><b>stuff</b> - ??</li>
+    <li><b>breed</b> - <a href='../mission_prop/breeds.html'>брид</a></li>
+    <li><b>skin</b> - скин</li>
+    <li><b>name</b> - имя персонажа</li>
+    <ul>
+        <li><b>first</b> - Фамилия</li>
+        <li><b>last</b> - Имя</li>
+        <li><b>unique</b> - уникальные Имя и Фамилия</li>
+    </ul>
 </ul>
 </p>
 <p>Спавнить объекты во время миссии можно через команду <a href='../scene/spawn.html'>spawn</a>.</p>
-<table border=2 cellpadding=3px bordercolor=black bgcolor=#ddd width=200px align=center>
-<tr><td align=center><a href='f2.html'>F2</a></td></tr>
-<tr><td align=center><a href='entity.html'>entity</a> • <a href='land.html'>land</a> • <a href='clip.html'>clip</a> • <a href='edifice.html'>edifice</a></td></tr>
-</table><br>
-<table border=2 cellpadding=3px bordercolor=#030 bgcolor=#2d2 width=450px align=center>
-<tr><td align=center><a href='f3.html'>F3</a></td></tr>
-<tr><td align=center><a href='view.html'>view</a> • <a href='entity.html'>entity</a> • <a href='squad.html'>squad</a> • <a href='waypoint.html'>waypoint</a> • <a href='zone.html'>zone</a> • <a href='trigger.html'>trigger</a> • <a href='camera.html'>camera</a> • <a href='cover.html'>cover</a></td></tr>
+<table border=2 cellpadding=3px style='border-color:black' bgcolor=#ddd width=200px align=center>
+    <tr>
+        <td align=center><a href='f2.html'>F2</a></td>
+    </tr>
+    <tr>
+        <td align=center><a href='entity.html'>entity</a> • <a href='land.html'>land</a> • <a href='clip.html'>clip</a>
+            • <a href='edifice.html'>edifice</a></td>
+    </tr>
 </table>
-<p align=center >Дмитрий Чуриков &#169 2015</p>
+<br/>
+<table border=2 cellpadding=3px style='border-color:#030' bgcolor=#2d2 width=450px align=center>
+    <tr>
+        <td align=center><a href='f3.html'>F3</a></td>
+    </tr>
+    <tr>
+        <td align=center><a href='view.html'>view</a> • <a href='entity.html'>entity</a> • <a
+                href='squad.html'>squad</a> • <a href='waypoint.html'>waypoint</a> • <a href='zone.html'>zone</a> • <a
+                href='trigger.html'>trigger</a> • <a href='camera.html'>camera</a> • <a href='cover.html'>cover</a></td>
+    </tr>
+</table>
+<script src="../js/signature.js"></script>
 </body>
 </html>

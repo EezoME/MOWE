@@ -9,7 +9,7 @@
 <a href='../editor.html'><img src='../images/home.jpg' class='homepage_ico' title="Перейти к главной странице"/></a>
 <h3>Навигация</h3>
 <li><a href='#sources'>Переход к началу рассмотрения селекторов</a></li>
-<li><a href='#standart'>Переход к source=standart</a></li>
+<li><a href='#standard'>Переход к source=standard</a></li>
 <li><a href='#advanced'>Переход к source=advanced</a></li>
 <li><a href='#current'>Переход к source=current</a></li>
 <li><a href='#waypoint'>Переход к source=waypoint</a></li>
@@ -23,85 +23,99 @@
 </p>
 <p><b>Селектор III типа</b> встречается всего в двух командах. Его особенностью является указание вейпоинта напрямую.
 </p>
-<p>Тип селектора определяется параметрами строки <b>source</b>.<br>У <b>селектора I типа</b> строка source принимает 3
-    значения: <b>standart</b>, <b>advanced</b> и <b>current</b>.<br><img src='../images/selectors/typeI.jpg'/><br>
+<p>Тип селектора определяется параметрами строки <b>source</b>.<br/>У <b>селектора I типа</b> строка source принимает 3
+    значения: <b>standart</b>, <b>advanced</b> и <b>current</b>.<br/>
+    <img src='../images/selectors/typeI.jpg'/><br/>
     У <b>селектора II типа</b> строка source принимает два значения: <b>standart</b> и <b>advanced</b>. И это логично,
-    по скольку логика нам не позволяет указать в качестве цели самого себя.<br><img
-            src='../images/selectors/typeII.jpg'/><br>
+    по скольку логика нам не позволяет указать в качестве цели самого себя.<br/>
+    <img src='../images/selectors/typeII.jpg'/><br/>
     У <b>селектора III типа</b> строка source принимает 3 значения: <b>standart</b>, <b>advanced</b> и <b>waypoint</b>.
     По сути, параметр <b>waypoint</b> по функциональности похож на параметр <b>current</b> и, возможно, в будущем
-    селектор III типа станет частным случаем селектора I типа и уберётся.<br><img
-            src='../images/selectors/typeIII.jpg'/></p>
-<h4><a name='sources'/>А теперь рассмотрим содержание селекторов</h4>
-<p>Во всех селекторах обязательно присутствуют две строки: <b>source</b> и </b><a
+    селектор III типа станет частным случаем селектора I типа и уберётся.<br/>
+    <img src='../images/selectors/typeIII.jpg'/></p>
+<h4><a name='sources'></a>А теперь рассмотрим содержание селекторов</h4>
+<p>Во всех селекторах обязательно присутствуют две строки: <b>source</b> и <b><a
         href='../lines/ignore_captured_by_user.html'>ignore_captured_by_user</a></b>.</p>
-<p><a name='standart'/>Если <b>source=standart</b>, то нам откроются 7 стандартных строк селектора.<br><img
-        src='../images/selectors/source_standart.jpg'/><br>
+<p><a name="standard"></a>Если <b>source=standard</b>, то нам откроются 7 стандартных строк селектора.<br/>
+    <img src='../images/selectors/source_standard.jpg'/><br/>
     Тут можно указать <a href='../lines/amount.html'>количество</a>, <a href='../lines/mids.html'>мид</a>, <a
             href='../lines/tag.html'>тег</a>, <a href='../lines/zone.html'>зону</a>, <a href='../lines/player.html'>плеер</a>,
-    <a href='../lines/type_selector.html'>тип</a> и <a href='../lines/state_selector.html'>статус</a>.<br>
+    <a href='../lines/type_selector.html'>тип</a> и <a href='../lines/state_selector.html'>статус</a>.<br/>
     Комбинации этих строк помогут выбрать именно того юнита, который нам нужен. Например, если указать mids=35,
     zone=zone1, state=not_dead, то селектор подыщет юнита с мидом 35, который находится в zone1 и всё ещё жив.</p>
-<p><a name='advanced'/>Когда <b>source=advanced</b> никаких дополнительных строк не появляется, но это только на первый
-    взгляд.<br><img src='../images/selectors/source_advanced.jpg'/><br>При нажатии правой кнопкой мыши на пустое место
-    после строки <i>ignore_captured_by_user</i> появится контекстное меню с тремя строчками: <b>+group</b>, <b>+sort</b>
-    и <b>+amount</b>.<br><img src='../images/selectors/source_advanced+group.jpg'/><br>
+<p><a name='advanced'></a>Когда <b>source=advanced</b> никаких дополнительных строк не появляется, но это только на
+    первый
+    взгляд.<br/>
+    <img src='../images/selectors/source_advanced.jpg'/><br/>
+    При нажатии правой кнопкой мыши на пустое место после строки <i>ignore_captured_by_user</i> появится контекстное
+    меню с тремя строчками: <b>+group</b>, <b>+sort</b> и <b>+amount</b>.<br/>
+    <img src='../images/selectors/source_advanced+group.jpg'/><br/>
     При нажатии на <b>+group</b> откроется три строки: <b>select</b>, <b>include</b> и <b>exclude</b>. Контекстное меню
     на строке <b>select</b> позволяет выбрать <b>мид</b>, <b>тег</b>, <b>зону</b>, <b>отряд</b>, <b>ид</b> или <b>объект
         инвентаря</b>. Строка <b>zone_ex</b> действует в точности как и <i>zone</i>, только наоборот, т.е. если юнита
-    нет в заданой зоне, комманда сработает.<br><img src='../images/selectors/source_advanced_group_select.jpg'/><br>
+    нет в заданой зоне, комманда сработает.<br/>
+    <img src='../images/selectors/source_advanced_group_select.jpg'/><br/>
     Контестные меню строк <b>include</b> и <b>exclude</b> одинаковые, но те, которые в <b>include</b> - включаются в
-    селектор, а те, что в <b>exclude</b> - исключаются.<br><img
-            src='../images/selectors/source_advanced_group_include.jpg'/> <img
-            src='../images/selectors/source_advanced_group_exclude.jpg'/><br>
-    Подробно каждая строка рассматримается <a href='#include'>сдесь</a>.<br>
+    селектор, а те, что в <b>exclude</b> - исключаются.<br/>
+    <img src='../images/selectors/source_advanced_group_include.jpg'/>
+    <img src='../images/selectors/source_advanced_group_exclude.jpg'/><br/>
+    Подробно каждая строка рассматримается <a href='#include'>сдесь</a>.<br/>
     При нажатии <b>+sort</b> добавится одна строка <b>sort</b> с параметрами <b>shuffle</b>, <b>waypoint</b> и
-    <b>entity</b>.<br><img src='../images/selectors/source_advanced+sort.jpg'/><br>
+    <b>entity</b>.<br/>
+    <img src='../images/selectors/source_advanced+sort.jpg'/><br/>
     Если <b>sort=shuffle</b>, то сортировка объектов не происходит? Вроде как присходит обратное - объекты
-    перетасовываются.<br><img src='../images/selectors/source_advanced_sort_shuffle.jpg'/><br>
+    перетасовываются.<br/>
+    <img src='../images/selectors/source_advanced_sort_shuffle.jpg'/><br/>
     Если <b>sort=waypoint</b>, сортировка происходит от вейпоинта с заданой стороны. Открываются две строчки:
-    <b>wpid</b> (тут указывается номер вейпоинта) и <b>mode</b> (тут указывается приближённость вейпоинта).<br><img
-            src='../images/selectors/source_advanced_sort_waypoint.jpg'/><br>
-    Строка <b>mode</b> имеет два значения: <b>nearest</b> (ближайший) и <b>farthest</b> (самый дальний).<br><img
-            src='../images/selectors/source_advanced_sort_waypoint_mode.jpg'/><br>
+    <b>wpid</b> (тут указывается номер вейпоинта) и <b>mode</b> (тут указывается приближённость вейпоинта).<br/>
+    <img src='../images/selectors/source_advanced_sort_waypoint.jpg'/><br/>
+    Строка <b>mode</b> имеет два значения: <b>nearest</b> (ближайший) и <b>farthest</b> (самый дальний).<br/>
+    <img src='../images/selectors/source_advanced_sort_waypoint_mode.jpg'/><br/>
     Если <b>sort=entity</b>, то вместо <i>wpid</i> появится строка <b>entity</b>, которая открывает селектор II
-    типа.<br><img src='../images/selectors/source_advanced_sort_entity.jpg'/><br>
-    При нажатии <b>+amount</b> появится строка <b><a href='../lines/amount.html'>amount</a></b>.<br><img
-            src='../images/selectors/source_advanced+amount.jpg'/></p>
-<p><a name='current'/>Когда <b>source=current</b> никаких строк не добавляется и селектор выбирает текущий
+    типа.<br/>
+    <img src='../images/selectors/source_advanced_sort_entity.jpg'/><br/>
+    При нажатии <b>+amount</b> появится строка <b><a href='../lines/amount.html'>amount</a></b>.<br/>
+    <img src='../images/selectors/source_advanced+amount.jpg'/></p>
+<p><a name='current'></a>Когда <b>source=current</b> никаких строк не добавляется и селектор выбирает текущий
     объект.<br><img src='../images/selectors/source_current.jpg'/></p>
-<p><a name='waypoint'/>Когда <b>source=waypoint</b> никаких строк не добавляется и селектор выбирает вейпоинт наверное
+<p><a name='waypoint'></a>Когда <b>source=waypoint</b> никаких строк не добавляется и селектор выбирает вейпоинт
+    наверное
     (какой - хз??).<br><img src='../images/selectors/source_waypoint.jpg'></p>
-<p><a name='include'/>А теперь про контекстное меню строк <b>include</b> и <b>exclude</b>. Это меню насчитывает 16
-    строк.<br><img src='../images/selectors/group_include_full.jpg'><br>
+<p><a name='include'></a>А теперь про контекстное меню строк <b>include</b> и <b>exclude</b>. Это меню насчитывает 16
+    строк.<br><img src='../images/selectors/group_include_full.jpg'><br/>
     Позволяет указать <b>зону</b>, <b>мид</b>, <b>тег</b>, <b>плеер</b>, а также:<br>
-    строка <b>relation</b> - указывает отношение к заданому плееру.<br><img
-            src='../images/selectors/list_relation.jpg'/><br>Например следующая картинка показывает, что объект должен
-    быть враждебен к player 2.<br><img src='../images/selectors/relation.jpg'><br>
-    Строка <b>prop</b> указывает на тип объекта.<br><img src='../images/selectors/list_prop.jpg'/><br>
-    Строка <b>discovered</b> указывает на то, что объект обнаружен.<br>
+    строка <b>relation</b> - указывает отношение к заданому плееру.<br/>
+    <img src='../images/selectors/list_relation.jpg'/><br/>
+    Например следующая картинка показывает, что объект должен быть враждебен к player 2.<br/>
+    <img src='../images/selectors/relation.jpg'><br/>
+    Строка <b>prop</b> указывает на тип объекта.<br/>
+    <img src='../images/selectors/list_prop.jpg'/><br/>
+    Строка <b>discovered</b> указывает на то, что объект обнаружен.<br/>
     Строка <b>state</b> указывает на статус объекта (мёртв, управляемый, движеспособный, с работающим шаси, с экипажем,
     неактивный, соеденённый с объектом, под управлением игрока, упавший, изученый, обнаружен, в отряде,
-    коммандир).<br><img src='../images/selectors/list_state.jpg'/><br>
-    Строка <b>with_item</b> указывает на объект в инвентаре объекта.<br><img
-            src='../images/selectors/list_with_item.jpg'/><br>
-    При <b>with_item=using</b> появляется строка <b>item</b>, в которой указывается объект инвертаря.<br><img
-            src='../images/selectors/with_item_using.jpg'><br>
-    При <b>with_item=existance</b>, помимо строки <b>item</b>, появляется строка <b>fillen</b> (хз что она знаит??).<br><img
-            src='../images/selectors/with_item_existance.jpg'><br>
+    коммандир).<br/>
+    <img src='../images/selectors/list_state.jpg'/><br/>
+    Строка <b>with_item</b> указывает на объект в инвентаре объекта.<br/>
+    <img src='../images/selectors/list_with_item.jpg'/><br/>
+    При <b>with_item=using</b> появляется строка <b>item</b>, в которой указывается объект инвертаря.<br/>
+    <img src='../images/selectors/with_item_using.jpg'><br/>
+    При <b>with_item=existance</b>, помимо строки <b>item</b>, появляется строка <b>fillen</b> (хз что она
+    значит??).<br/>
+    <img src='../images/selectors/with_item_existance.jpg'><br/>
     При <b>with_item=amount</b>, помимо строки <b>item</b>, в которой указывается объект инвентаря, появляется строка
-    <b>min</b>, которая, по всей видимости, указывает минимальное количество этого объекта в инвентаре.<br><img
-            src='../images/selectors/with_item_amount.jpg'/><br>
-    Строки <b>broken_components</b> и <b>destroyed_components</b> указывают на сломаную часть объекта.<br>
-    Строка <b>movement_type</b> указывает на тип передвижения объекта.<br><img
-            src='../images/selectors/list_movement_type.jpg'/><br>
-    Строка <b>entity_stuff</b> указывает на объект (другой, не инвентарный).<br>
-    Строка <b>cover</b> указывает на укрытие.<br>
+    <b>min</b>, которая, по всей видимости, указывает минимальное количество этого объекта в инвентаре.<br/>
+    <img src='../images/selectors/with_item_amount.jpg'/><br/>
+    Строки <b>broken_components</b> и <b>destroyed_components</b> указывают на сломаную часть объекта.<br/>
+    Строка <b>movement_type</b> указывает на тип передвижения объекта.<br/>
+    <img src='../images/selectors/list_movement_type.jpg'/><br/>
+    Строка <b>entity_stuff</b> указывает на объект (другой, не инвентарный).<br/>
+    Строка <b>cover</b> указывает на укрытие.<br/>
     Строка <b>team</b> указывает на команду. Применимо в сетевом режиме.<br>
     Строка <b>order</b> указывает на приказ???
 </p>
 <p><b>Селектор I типа</b> под видом строки <b>selector</b> встречается в командах <a href='../actor_state.html'>actor_state</a>,
-    <a href='../delete.html'>delete</a>, <a href='../actor/ables.html'>ables</a>, <a href='../actor/action.html'>action</a>,
+    <a href='../delete.html'>delete</a>, <a href='../actor/ables.html'>ables</a>, <a
+            href='../actor/action.html'>action</a>,
     <a href='../actor/actor_component.html'>actor_component</a>, <a href='../actor/actor_fire.html'>actor_fire</a>, <a
             href='../actor/actor_to_cover.html'>actor_to_cover</a>, <a href='../actor/air_attack.html'>air_attack</a>,
     <a href='../actor/air_state.html'>air_state</a>, <a href='../actor/animation.html'>animation</a>, <a
@@ -116,7 +130,7 @@
             href='../other/manual_lock.html'>manual_lock</a>, <a href='../other/mine_state.html'>mine_state</a>, <a
             href='../other/placement.html'>placement</a>, <a href='../other/throw_off.html'>throw_off</a>, <a
             href='../other/unlink.html'>unlink</a>, <a href='../scene/follow_animation.html'>follow_animation</a>, <a
-            href='../scene/store_units.html'>store_units</a>.<br>
+            href='../scene/store_units.html'>store_units</a>.<br/>
     <b>Селектор II типа</b> встречается в командах
     <a href='../actor/action.html'>action</a> (под видом строки <a href='../lines/target.html'>target</a>),
     <a href='../actor/actor_fire.html'>actor_fire</a> (под видом строки <a href='../lines/enemies.html'>enemies</a>),
@@ -124,7 +138,7 @@
     <a href='../actor/board.html'>board</a> (под видом строки <a href='../lines/vehicle.html'>vehicle</a>),
     <a href='../actor/emit.html'>emit</a> (под видом строки <a href='../lines/crew.html'>crew</a>),
     <a href='../entity/linker.html'>linker</a> (под видом строки <a href='../lines/entities.html'>entities</a>),
-    <a href='../other/placement.html'>placement</a> (под видом строки <a href='../lines/target.html'>target</a>).<br>
+    <a href='../other/placement.html'>placement</a> (под видом строки <a href='../lines/target.html'>target</a>).<br/>
     <b>Селектор III типа</b> под видом строки <b>selector</b> встречается в командах <a
             href='../squad/squad.html'>squad</a> и <a href='../squad/squad_create.html'>squad_create</a>.</p>
 </body>

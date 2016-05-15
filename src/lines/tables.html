@@ -1,398 +1,450 @@
 <html>
-<head><meta charset='utf-8'>
-<link rel='stylesheet' type='text/css' href='../style.css'>
+<head>
+    <meta charset='utf-8'>
+    <link rel='stylesheet' type='text/css' href='../style.css'>
 </head>
 <body>
+<br/>
 <base target="_top">
-<table class='tableOne' border=2 cellpadding=3px bordercolor=blue bgcolor=lightblue width=100%>
-	<tr><td colspan=2 align=center><b>Строки по алфавиту</b></td></tr>
-	<tr><td><ul>
-	<li><a href='action_action.html'>action (action)</a> • 
-	<a href='action_inventory.html'>action (inventory)</a> • 
-	<a href='action_linker.html'>action (linker)</a> • 
-	<a href='action_mine_state.html'>action (mine_state)</a> • 
-	<a href='action_waypoint.html'>action (waypoint)</a> • 
-	<a href='add_ables.html'>add (ables)</a> • 
-	<a href='add_objective_progress.html'>add (objective_progress)</a> • 
-	<a href='advance_ratio.html'>advance_ratio</a> • 
-	<a href='ai_move.html'>ai_move</a> • 
-	<a href='altitude.html'>altitude</a> • 
-	<a href='amount.html' target="_top">amount</a> • 
-	<a href='animation.html'>animation</a> • 
-	<a href='approach.html'>approach</a> • 
-	<a href='attack.html'>attack</a> • 
-	<a href='attack_altitude.html'>attack_altitude</a></li>
-	<li><a href='backward.html'>backward</a> • 
-	<a href='bone.html'>bone</a> • 
-	<a href='burst_mode.html'>burst_mode</a></li>
-	<li><a href='call.html'>call</a> • 
-	<a href='cannon.html'>cannon</a> • 
-	<a href='circledelay.html'>circledelay</a> • 
-	<a href='clear_queue.html'>clear_queue</a> • 
-	<a href='clone.html'>clone</a> • 
-	<a href='collage.html'>collage</a> • 
-	<a href='color.html'>color</a> • 
-	<a href='component.html'>component</a> • 
-	<a href='context.html'>context</a> • 
-	<a href='control.html'>control</a> • 
-	<a href='copy_squad.html'>copy_squad</a> • 
-	<a href='count.html'>count</a> • 
-	<a href='count_entity_manager.html'>count (entity_manager)</a> • 
-	<a href='covers.html'>covers</a> • 
-	<a href='crew.html'>crew</a></li>
-	<li><a href='delay.html'>delay</a> • 
-	<a href='deviate.html'>deviate</a> • 
-	<a href='die.html'>die</a> • 
-	<a href='direction.html'>direction</a> • 
-	<a href='disable_cancel.html'>disable_cancel</a> • 
-	<a href='discovered.html'>discovered</a> • 
-	<a href='do_not_restore_camera.html'>do_not_restore_camera</a> • 
-	<a href='do_not_store_camera.html'>do_not_store_camera</a> • 
-	<a href='drop.html'>drop</a></li>
-	<li><a href='effect.html'>effect</a> • 
-	<a href='enable.html'>enable</a> • 
-	<a href='enabled.html'>enabled</a> • 
-	<a href='enemies.html'>enemies</a> • 
-	<a href='energy.html'>energy</a> • 
-	<a href='entities.html'>entities</a> • 
-	<a href='entity.html'>entity</a> • 
-	<a href='entity_spawn.html'>entity (spawn)</a> • 
-	<a href='event.html'>event</a> • 
-	<a href='event_mp_event.html'>event (mp_event)</a> • 
-	<a href='event_on_cancel.html'>event_on_cancel</a> • 
-	<a href='event_on_next.html'>event_on_next</a> • 
-	<a href='examined.html'>examined</a></li>
-	<li><a href='fade.html'>fade</a> • 
-	<a href='fire_mode.html'>fire_mode</a> • 
-	<a href='flags.html'>flags</a> • 
-	<a href='follow_commander.html'>follow_commander</a> • 
-	<a href='force_auto_complete.html'>force_auto_complete</a> • 
-	<a href='force_placement.html'>force_placement</a> • 
-	<a href='forward.html'>forward (actor_state)</a> • 
-	<a href='forward_numeric.html'>forward (throw_off)</a> • 
-	<a href='fov.html'>fov</a> • 
-	<a href='function.html'>function</a></li>
-	<li><a href='ground.html'>ground</a> • 
-	<a href='guard.html'>guard</a></li>
-	<li><a href='health.html'>health</a> • 
-	<a href='hide.html'>hide</a></li>
-	<li><a href='ignore_captured_by_user.html'>ignore_captured_by_user</a> • 
-	<a href='ignore_z.html'>ignore_z</a> • 
-	<a href='impregnability.html'>impregnability</a> • 
-	<a href='in_camera.html'>in_camera</a> • 
-	<a href='inactive.html'>inactive</a> • 
-	<a href='interval.html'>interval</a> • 
-	<a href='item.html'>item</a></li>
-	<li><a href='keep_orientation.html'>keep_orientation</a> • 
-	<a href='kind.html'>kind</a></li>
-	<li><a href='lock.html'>lock</a> • 
-	<a href='loop.html'>loop</a></li>
-	<li><a href='make_enemies_forget.html'>make_enemies_forger</a> • 
-	<a href='make_squad.html'>make_squad</a> • 
-	<a href='max_speed_kph.html'>max_speed_kph</a> • 
-	<a href='message.html'>message</a> • 
-	<a href='mids.html'>mids</a> • 
-	<a href='miner.html'>miner</a> • 
-	<a href='mode_actor_to_cover.html'>mode (actor_to_cover)</a> • 
-	<a href='mode_emit.html'>mode (emit)</a> • 
-	<a href='mode_event.html'>mode (event)</a> • 
-	<a href='mode_game_speed.html'>mode (game_speed)</a> • 
-	<a href='mode_if.html'>mode (if, while)</a> • 
-	<a href='mode_squad_state.html'>mode (squad_state)</a> • 
-	<a href='move_from_back.html'>move_from_back</a> • 
-	<a href='move_mode.html'>move_mode</a> • 
-	<a href='move_radius.html'>move_radius</a></li>
-	<li><a href='name_environment.html'>name (environment)</a> • 
-	<a href='name_reinforcement.html'>name (reinforcement)</a> • 
-	<a href='name_scenario.html'>name (scenario)</a> • 
-	<a href='name_set_clip.html'>name (set_clip)</a> • 
-	<a href='name_sound.html'>name (sound)</a> • 
-	<a href='name_squad.html'>name_squad</a> • 
-	<a href='name_squad+create.html'>name (squad)</a> • 
-	<a href='name_task.html'>name (task)</a> • 
-	<a href='name_trigger.html'>name (trigger)</a> • 
-	<a href='nearest.html'>nearest</a> • 
-	<a href='no_advance.html'>no_advance</a> • 
-	<a href='no_retreat.html'>no_retreat</a> • 
-	<a href='not_synced.html'>not_synced</a></li>
-	<li><a href='on.html'>on</a> • 
-	<a href='only_weapon.html'>only_weapon</a> • 
-	<a href='op.html'>op</a> • 
-	<a href='operation_player.html'>operation (player)</a> • 
-	<a href='operation_reinforcement.html'>operation (reinforcement)</a> • 
-	<a href='operation_squad.html'>operation (squad)</a></li>
-	<li><a href='place_board.html'>place (board)</a> • 
-	<a href='place_linker.html'>place (linker)</a> • 
-	<a href='player.html'>player</a></li>
-	<li><a href='quant_mode.html'>quant_mode</a></li>
-	<li><a href='radius.html'>radius</a> • 
-	<a href='random_weapon.html'>random_weapon</a> • 
-	<a href='remove.html'>remove</a> • 
-	<a href='result.html'>result</a> • 
-	<a href='resume.html'>resume</a> • 
-	<a href='retreat_ratio.html'>retreat_ratio</a></li>
-	<li><a href='say.html'>say</a> • 
-	<a href='score.html'>score</a> • 
-	<a href='selector.html'>selector</a> • 
-	<a href='set.html'>set</a> • 
-	<a href='slot_name.html'>slot_name</a> • 
-	<a href='smooth_begin.html'>smooth_begin</a> • 
-	<a href='smooth_end.html'>smooth_end</a> • 
-	<a href='sound.html'>sound</a> • 
-	<a href='source_2.html'>source</a> • 
-	<a href='speed.html'>speed</a> • 
-	<a href='speed_kph.html'>speed_kph</a> • 
-	<a href='speed_numeric.html'>speed (числовой)</a> • 
-	<a href='squad.html'>squad</a> • 
-	<a href='start.html'>start</a> • 
-	<a href='state_actor_component.html'>state (actor_component)</a> • 
-	<a href='state_selector.html'>state (селектор)</a> • 
-	<a href='state_task.html'>state (task)</a> • 
-	<a href='status.html'>status</a> • 
-	<a href='stop.html'>stop</a> • 
-	<a href='stop_all.html'>stop_all</a></li>
-	<li><a href='tag.html'>tag</a> • 
-	<a href='tag_add.html'>tag_add</a> • 
-	<a href='tag_remove.html'>tag_remove</a> • 
-	<a href='target.html'>target</a> • 
-	<a href='target_waypoint.html'>target_waypoint</a> • 
-	<a href='team.html'>team</a> • 
-	<a href='text.html'>text</a> • 
-	<a href='text_con.html'>text (con)</a> • 
-	<a href='time.html'>time</a> • 
-	<a href='title.html'>title</a> • 
-	<a href='totalTime.html'>totalTime</a> • 
-	<a href='trigger_on_cancel.html'>trigger_on_cancel</a> • 
-	<a href='trigger_on_next.html'>trigger_on_next</a> • 
-	<a href='turn.html'>turn</a> • 
-	<a href='type_if.html'>type (if, while)</a> • 
-	<a href='type_movement.html'>type (movement)</a> • 
-	<a href='type_selector.html'>type (селектор)</a></li>
-	<li><a href='unmasking.html'>unmasking</a> • 
-	<a href='up.html'>up</a></li>
-	<li><a href='value.html'>value</a> • 
-	<a href='var.html'>var</a> • 
-	<a href='vehicle.html'>vehicle</a> • 
-	<a href='video.html'>video</a> • 
-	<a href='volume_action.html'>volume (action)</a> • 
-	<a href='volume_music.html'>volume (music)</a></li>
-	<li><a href='waypoint.html'>waypoint</a> • 
-	<a href='waypoint_to_attack.html'>waypoint_to_attack</a> • 
-	<a href='weapon_prepare.html'>weapon_prepare</a> • 
-	<a href='who.html'>who</a></li>
-	<li><a href='zone.html'>zone</a></li>
-	</ul></td></tr>
+<table class='tableOne' border=2 cellpadding=3px style='border-color:blue' bgcolor=#add8e6 width=100%>
+    <tr>
+        <td colspan=2 align=center><b>Строки по алфавиту</b></td>
+    </tr>
+    <tr>
+        <td>
+            <ul>
+                <li><a href='action_action.html'>action (action)</a> •
+                    <a href='action_inventory.html'>action (inventory)</a> •
+                    <a href='action_linker.html'>action (linker)</a> •
+                    <a href='action_mine_state.html'>action (mine_state)</a> •
+                    <a href='action_waypoint.html'>action (waypoint)</a> •
+                    <a href='add_ables.html'>add (ables)</a> •
+                    <a href='add_objective_progress.html'>add (objective_progress)</a> •
+                    <a href='advance_ratio.html'>advance_ratio</a> •
+                    <a href='ai_move.html'>ai_move</a> •
+                    <a href='altitude.html'>altitude</a> •
+                    <a href='amount.html' target="_top">amount</a> •
+                    <a href='animation.html'>animation</a> •
+                    <a href='approach.html'>approach</a> •
+                    <a href='attack.html'>attack</a> •
+                    <a href='attack_altitude.html'>attack_altitude</a>
+                </li>
+                <li><a href='backward.html'>backward</a> •
+                    <a href='bone.html'>bone</a> •
+                    <a href='burst_mode.html'>burst_mode</a>
+                </li>
+                <li><a href='call.html'>call</a> •
+                    <a href='cannon.html'>cannon</a> •
+                    <a href='circledelay.html'>circledelay</a> •
+                    <a href='clear_queue.html'>clear_queue</a> •
+                    <a href='clone.html'>clone</a> •
+                    <a href='collage.html'>collage</a> •
+                    <a href='color.html'>color</a> •
+                    <a href='component.html'>component</a> •
+                    <a href='context.html'>context</a> •
+                    <a href='control.html'>control</a> •
+                    <a href='copy_squad.html'>copy_squad</a> •
+                    <a href='count.html'>count</a> •
+                    <a href='count_entity_manager.html'>count (entity_manager)</a> •
+                    <a href='covers.html'>covers</a> •
+                    <a href='crew.html'>crew</a>
+                </li>
+                <li><a href='delay.html'>delay</a> •
+                    <a href='deviate.html'>deviate</a> •
+                    <a href='die.html'>die</a> •
+                    <a href='direction.html'>direction</a> •
+                    <a href='disable_cancel.html'>disable_cancel</a> •
+                    <a href='discovered.html'>discovered</a> •
+                    <a href='do_not_restore_camera.html'>do_not_restore_camera</a> •
+                    <a href='do_not_store_camera.html'>do_not_store_camera</a> •
+                    <a href='drop.html'>drop</a>
+                </li>
+                <li><a href='effect.html'>effect</a> •
+                    <a href='enable.html'>enable</a> •
+                    <a href='enabled.html'>enabled</a> •
+                    <a href='enemies.html'>enemies</a> •
+                    <a href='energy.html'>energy</a> •
+                    <a href='entities.html'>entities</a> •
+                    <a href='entity.html'>entity</a> •
+                    <a href='entity_spawn.html'>entity (spawn)</a> •
+                    <a href='event.html'>event</a> •
+                    <a href='event_mp_event.html'>event (mp_event)</a> •
+                    <a href='event_on_cancel.html'>event_on_cancel</a> •
+                    <a href='event_on_next.html'>event_on_next</a> •
+                    <a href='examined.html'>examined</a>
+                </li>
+                <li><a href='fade.html'>fade</a> •
+                    <a href='fire_mode.html'>fire_mode</a> •
+                    <a href='flags.html'>flags</a> •
+                    <a href='follow_commander.html'>follow_commander</a> •
+                    <a href='force_auto_complete.html'>force_auto_complete</a> •
+                    <a href='force_placement.html'>force_placement</a> •
+                    <a href='forward.html'>forward (actor_state)</a> •
+                    <a href='forward_numeric.html'>forward (throw_off)</a> •
+                    <a href='fov.html'>fov</a> •
+                    <a href='function.html'>function</a>
+                </li>
+                <li><a href='ground.html'>ground</a> •
+                    <a href='guard.html'>guard</a>
+                </li>
+                <li><a href='health.html'>health</a> •
+                    <a href='hide.html'>hide</a>
+                </li>
+                <li><a href='ignore_captured_by_user.html'>ignore_captured_by_user</a> •
+                    <a href='ignore_z.html'>ignore_z</a> •
+                    <a href='impregnability.html'>impregnability</a> •
+                    <a href='in_camera.html'>in_camera</a> •
+                    <a href='inactive.html'>inactive</a> •
+                    <a href='interval.html'>interval</a> •
+                    <a href='item.html'>item</a>
+                </li>
+                <li><a href='keep_orientation.html'>keep_orientation</a> •
+                    <a href='kind.html'>kind</a>
+                </li>
+                <li><a href='lock.html'>lock</a> •
+                    <a href='loop.html'>loop</a>
+                </li>
+                <li><a href='make_enemies_forget.html'>make_enemies_forger</a> •
+                    <a href='make_squad.html'>make_squad</a> •
+                    <a href='max_speed_kph.html'>max_speed_kph</a> •
+                    <a href='message.html'>message</a> •
+                    <a href='mids.html'>mids</a> •
+                    <a href='miner.html'>miner</a> •
+                    <a href='mode_actor_to_cover.html'>mode (actor_to_cover)</a> •
+                    <a href='mode_emit.html'>mode (emit)</a> •
+                    <a href='mode_event.html'>mode (event)</a> •
+                    <a href='mode_game_speed.html'>mode (game_speed)</a> •
+                    <a href='mode_if.html'>mode (if, while)</a> •
+                    <a href='mode_squad_state.html'>mode (squad_state)</a> •
+                    <a href='move_from_back.html'>move_from_back</a> •
+                    <a href='move_mode.html'>move_mode</a> •
+                    <a href='move_radius.html'>move_radius</a>
+                </li>
+                <li><a href='name_environment.html'>name (environment)</a> •
+                    <a href='name_reinforcement.html'>name (reinforcement)</a> •
+                    <a href='name_scenario.html'>name (scenario)</a> •
+                    <a href='name_set_clip.html'>name (set_clip)</a> •
+                    <a href='name_sound.html'>name (sound)</a> •
+                    <a href='name_squad.html'>name_squad</a> •
+                    <a href='name_squad+create.html'>name (squad)</a> •
+                    <a href='name_task.html'>name (task)</a> •
+                    <a href='name_trigger.html'>name (trigger)</a> •
+                    <a href='nearest.html'>nearest</a> •
+                    <a href='no_advance.html'>no_advance</a> •
+                    <a href='no_retreat.html'>no_retreat</a> •
+                    <a href='not_synced.html'>not_synced</a>
+                </li>
+                <li><a href='on.html'>on</a> •
+                    <a href='only_weapon.html'>only_weapon</a> •
+                    <a href='op.html'>op</a> •
+                    <a href='operation_player.html'>operation (player)</a> •
+                    <a href='operation_reinforcement.html'>operation (reinforcement)</a> •
+                    <a href='operation_squad.html'>operation (squad)</a>
+                </li>
+                <li><a href='place_board.html'>place (board)</a> •
+                    <a href='place_linker.html'>place (linker)</a> •
+                    <a href='player.html'>player</a>
+                </li>
+                <li><a href='quant_mode.html'>quant_mode</a>
+                </li>
+                <li><a href='radius.html'>radius</a> •
+                    <a href='random_weapon.html'>random_weapon</a> •
+                    <a href='remove.html'>remove</a> •
+                    <a href='result.html'>result</a> •
+                    <a href='resume.html'>resume</a> •
+                    <a href='retreat_ratio.html'>retreat_ratio</a>
+                </li>
+                <li><a href='say.html'>say</a> •
+                    <a href='score.html'>score</a> •
+                    <a href='selector.html'>selector</a> •
+                    <a href='set.html'>set</a> •
+                    <a href='slot_name.html'>slot_name</a> •
+                    <a href='smooth_begin.html'>smooth_begin</a> •
+                    <a href='smooth_end.html'>smooth_end</a> •
+                    <a href='sound.html'>sound</a> •
+                    <a href='source_2.html'>source</a> •
+                    <a href='speed.html'>speed</a> •
+                    <a href='speed_kph.html'>speed_kph</a> •
+                    <a href='speed_numeric.html'>speed (числовой)</a> •
+                    <a href='squad.html'>squad</a> •
+                    <a href='start.html'>start</a> •
+                    <a href='state_actor_component.html'>state (actor_component)</a> •
+                    <a href='state_selector.html'>state (селектор)</a> •
+                    <a href='state_task.html'>state (task)</a> •
+                    <a href='status.html'>status</a> •
+                    <a href='stop.html'>stop</a> •
+                    <a href='stop_all.html'>stop_all</a>
+                </li>
+                <li><a href='tag.html'>tag</a> •
+                    <a href='tag_add.html'>tag_add</a> •
+                    <a href='tag_remove.html'>tag_remove</a> •
+                    <a href='target.html'>target</a> •
+                    <a href='target_waypoint.html'>target_waypoint</a> •
+                    <a href='team.html'>team</a> •
+                    <a href='text.html'>text</a> •
+                    <a href='text_con.html'>text (con)</a> •
+                    <a href='time.html'>time</a> •
+                    <a href='title.html'>title</a> •
+                    <a href='totalTime.html'>totalTime</a> •
+                    <a href='trigger_on_cancel.html'>trigger_on_cancel</a> •
+                    <a href='trigger_on_next.html'>trigger_on_next</a> •
+                    <a href='turn.html'>turn</a> •
+                    <a href='type_if.html'>type (if, while)</a> •
+                    <a href='type_movement.html'>type (movement)</a> •
+                    <a href='type_selector.html'>type (селектор)</a>
+                </li>
+                <li><a href='unmasking.html'>unmasking</a> •
+                    <a href='up.html'>up</a></li>
+                <li><a href='value.html'>value</a> •
+                    <a href='var.html'>var</a> •
+                    <a href='vehicle.html'>vehicle</a> •
+                    <a href='video.html'>video</a> •
+                    <a href='volume_action.html'>volume (action)</a> •
+                    <a href='volume_music.html'>volume (music)</a>
+                </li>
+                <li><a href='waypoint.html'>waypoint</a> •
+                    <a href='waypoint_to_attack.html'>waypoint_to_attack</a> •
+                    <a href='weapon_prepare.html'>weapon_prepare</a> •
+                    <a href='who.html'>who</a>
+                </li>
+                <li><a href='zone.html'>zone</a>
+                </li>
+            </ul>
+        </td>
+    </tr>
 </table>
 <br>
 
 
-<table class='tableTwo' border=2 bordercolor=green bgcolor=lightgreen width=100%>
-	<tr><td colspan=2 align=center><b><a href='../lines.html'>Строки по типам</a></b></td></tr>
-	<tr><td align=center width=10%><b>lt1</b></td><td>
-	<a href='action_action.html'>action (action)</a> • 
-	<a href='ai_move.html'>ai_move</a> •
-	<a href='approach.html'>approach</a> • 
-	<a href='attack.html'>attack</a> • 
-	<a href='cannon.html'>cannon</a> • 
-	<a href='control.html'>control</a> • 
-	<a href='direction.html'>direction</a> • 
-	<a href='fire_mode.html'>fire_mode</a> • 
-	<a href='function.html'>function</a> • 
-	<a href='impregnability.html'>impregnability</a> • 
-	<a href='kind.html'>kind</a> • 
-	<a href='miner.html'>miner</a> • 
-	<a href='mode_game_speed.html'>mode(game_speed)</a> • 
-	<a href='mode_squad_state.html'>mode(squad_state)</a> • 
-	<a href='move_mode.html'>move_mode</a> • 
-	<a href='name_reinforcement.html'>name(reinforcement)</a> • 
-	<a href='name_scenario.html'>name(scenario)</a> • 
-	<a href='name_set_clip.html'>name(set_clip)</a> • 
-	<a href='name_task.html'>name(task)</a> • 
-	<a href='player.html'>player</a> • 
-	<a href='result.html'>result</a> • 
-	<a href='say.html'>say</a> • 
-	<a href='speed.html'>speed</a> • 
-	<a href='state_actor_component.html'>state(actor_component)</a> • 
-	<a href='state_selector.html'>state(селектор)</a> • 
-	<a href='status.html'>status</a> • 
-	<a href='type_if.html'>type(if,while)</a> • 
-	<a href='type_movement.html'>type(movement)</a> • 
-	<a href='type_selector.html'>type(селектор)</a> • 
-	<a href='unmasking.html'>unmasking</a> • 
-	<a href='var.html'>var</a> • 
-	<a href='zone.html'>zone</a>
-	</td></tr>
-	
-	<tr><td align=center><b>lt2</b></td><td>
-	<a href='action_inventory.html'>action(inventory)</a> • 
-	<a href='action_linker.html'>action(linker)</a> • 
-	<a href='action_mine_state.html'>action(mine_state)</a> • 
-	<a href='action_waypoint.html'>action(waypoint)</a> • 
-	<a href='burst_mode.html'>burst_mode</a> • 
-	<a href='count_entity_manager.html'>count(entity_manager)</a> • 
-	<a href='mode_actor_to_cover.html'>mode(actor_to_cover)</a> • 
-	<a href='mode_emit.html'>mode(emit)</a> • 
-	<a href='mode_event.html'> mode(event)</a> • 
-	<a href='mode_if.html'>mode (if,while)</a> • 
-	<a href='op.html'>op</a> • 
-	<a href='operation_player.html'>operation(player)</a> • 
-	<a href='operation_reinforcement.html'>operation(reinforcement)</a> • 
-	<a href='operation_squad.html'>operation(squad)</a> •
-	<a href='place_linker.html'>place(linker)</a> • 
-	<a href='quant_mode.html'>quant_mode</a> • 
-	<a href='source_2.html'>source</a> • 
-	<a href='state_task.html'>state(task)</a> • 
-	<a href='volume_music.html'>volume(music)</a> • 
-	<a href='who.html'>who</a>
-	</td></tr>
-	
-	<tr><td align=center><b>lt3</b></td><td>
-	<a href='backward.html'>backward</a> • 
-	<a href='discovered.html'>discovered</a> • 
-	<a href='enable.html'>enable</a> • 
-	<a href='examined.html'>examined</a> • 
-	<a href='follow_commander.html'>follow_commander</a> • 
-	<a href='forward.html'>forward</a> • 
-	<a href='guard.html'>guard</a> •
-	<a href='inactive.html'>inactive</a> • 
-	<a href='lock.html'>lock</a> • 
-	<a href='no_advance.html'>no_advance</a> • 
-	<a href='no_retreat.html'>no_retreat</a> • 
-	<a href='weapon_prepare.html'>weapon_prepare</a>
-	</td></tr>
-	
-	<tr><td align=center><b>lt6</b></td><td>
-	<a href='add_ables.html'>add(ables)</a> • 
-	<a href='covers.html'>covers</a> • 
-	<a href='drop.html'>drop</a> • 
-	<a href='flags.html'>flags</a> •
-	<a href='remove.html'>remove</a>
-	</td></tr>
-	
-	<tr><td align=center width=10%><b>lt7</b></td><td>
-	<a href='name_squad+create.html'>name(squad)</a> • 
-	<a href='squad.html'>squad</a> • 
-	<a href='tag.html'>tag</a> •
-	<a href='tag_add.html'>tag_add</a> • 
-	<a href='tag_remove.html'>tag_remove</a> • 
-	<a href='value.html'>value</a>
-	</td></tr>
-	
-	<tr><td align=center><b>lb</b></td><td>
-	<a href='clear_queue.html'>clear_queue</a> • 
-	<a href='clone.html'>clone</a> • 
-	<a href='context.html'>context</a> • 
-	<a href='deviate.html'>deviate</a> • 
-	<a href='die.html'>die</a> • 
-	<a href='disable_cancel.html'>disable_cancel</a> • 
-	<a href='do_not_restore_camera.html'>do_not_restore_camera</a> • 
-	<a href='do_not_store_camera.html'>do_not_store_camera</a> • 
-	<a href='enabled.html'>enabled</a> • 
-	<a href='force_auto_complete.html'>force_auto_complete</a> • 
-	<a href='force_placement.html'>force_placement</a> • 
-	<a href='ground.html'>ground</a> • 
-	<a href='hide.html'>hide</a> • 
-	<a href='ignore_captured_by_user.html'>ignore_captured_by_user</a> • 
-	<a href='ignore_z.html'>ignore_z</a> • 
-	<a href='in_camera.html'>in_camera</a> •
-	<a href='keep_orientation.html'>keep_orientation</a> • 
-	<a href='loop.html'>loop</a> • 
-	<a href='make_enemies_forget.html'>make_enemies_forget</a> • 
-	<a href='make_squad.html'>make_squad</a> • 
-	<a href='move_from_back.html'>move_from_back</a> • 
-	<a href='nearest.html'>nearest</a> • 
-	<a href='not_synced.html'>not_synced</a> • 
-	<a href='on.html'>on</a> • 
-	<a href='only_weapon.html'>only_weapon</a> • 
-	<a href='random_weapon.html'>random_weapon</a> • 
-	<a href='resume.html'>resume</a> • 
-	<a href='smooth_begin.html'>smooth_begin</a> • 
-	<a href='smooth_end.html'>smooth_end</a> • 
-	<a href='stop_all.html'>stop_all</a>
-	</td></tr>
-	
-	<tr><td align=center><b>ln</b></td><td>
-	<a href='add_objective_progress.html'>add(objective_progress)</a> • 
-	<a href='advance_ratio.html'>advance_ratio</a> • 
-	<a href='altitude.html'>altitude</a> • 
-	<a href='amount.html'>amount</a> • 
-	<a href='attack_altitude.html'>attack_altitude</a> • 
-	<a href='circledelay.html'>cirledelay</a> • 
-	<a href='count.html'>count</a> • 
-	<a href='delay.html'>delay</a> • 
-	<a href='energy.html'>energy</a> • 
-	<a href='entity.html'>entity</a> • 
-	<a href='fade.html'>fade</a> • 
-	<a href='forward_numeric.html'>forward</a> • 
-	<a href='fov.html'>fov</a> • 
-	<a href='health.html'>health</a> • 
-	<a href='interval.html'>interval</a> • 
-	<a href='max_speed_kph.html'>max_speed_kph</a> • 
-	<a href='mids.html'>mids</a> •
-	<a href='move_radius.html'>move_radius</a> • 
-	<a href='radius.html'>radius</a> • 
-	<a href='retreat_ratio.html'>reatreat_ratio</a> • 
-	<a href='score.html'>score</a> • 
-	<a href='set.html'>set</a> • 
-	<a href='speed_numeric.html'>speed</a> • 
-	<a href='speed_kph.html'>speed_kph</a> • 
-	<a href='target_waypoint.html'>target_waypoint</a> • 
-	<a href='time.html'>time</a> • 
-	<a href='totalTime.html'>totalTime</a> • 
-	<a href='turn.html'>turn</a> • 
-	<a href='up.html'>up</a> • 
-	<a href='volume_action.html'>volume(action)</a> • 
-	<a href='waypoint.html'>waypoint</a> • 
-	<a href='waypoint_to_attack.html'>waypoint_to_attack</a>
-	</td></tr>
-	
-	<tr><td align=center width=10%><b>lt</b></td><td>
-	<a href='animation.html'>animation</a> • 
-	<a href='bone.html'>bone</a> • 
-	<a href='collage.html'>collage</a> • 
-	<a href='component.html'>component</a> • 
-	<a href='copy_squad.html'>copy_squad</a> • 
-	<a href='effect.html'>effect</a> • 
-	<a href='event_mp_event.html'>event(mp_event)</a> • 
-	<a href='name_environment.html'>name(environment)</a> • 
-	<a href='name_squad.html'>name_squad</a> • 
-	<a href='place_board.html'>place(board)</a> • 
-	<a href='slot_name.html'>slot_name</a> • 
-	<a href='team.html'>team</a> • 
-	<a href='text_con.html'>text(con)</a> • 
-	<a href='video.html'>video</a>
-	</td></tr>
-	
-	<tr><td align=center><b>ls</b></td><td>
-	<a href='call.html'>call</a> • 
-	<a href='crew.html'>crew</a> • 
-	<a href='enemies.html'>enemies</a> • 
-	<a href='entities.html'>entities</a> • 
-	<a href='entity_spawn.html'>entity(spawn)</a> • 
-	<a href='event.html'>event</a> • 
-	<a href='event_on_cancel.html'>event_on_cancel</a> • 
-	<a href='event_on_next.html'>event_on_next</a> • 
-	<a href='name_trigger.html'>name(trigger)</a> • 
-	<a href='selector.html'>selector</a> •
-	<a href='start.html'>start</a> • 
-	<a href='stop.html'>stop</a> • 
-	<a href='target.html'>target</a> • 
-	<a href='trigger_on_cancel.html'>trigger_on_cancel</a> • 
-	<a href='trigger_on_next.html'>trigger_on_next</a> • 
-	<a href='vehicle.html'>vehicle</a>
-	</td></tr>
-	
-	<tr><td align=center><b>lts</b></td><td>
-	<a href='color.html'>color</a> • 
-	<a href='item.html'>item</a> • 
-	<a href='message.html'>message</a> • 
-	<a href='name_sound.html'>name(sound)</a> •
-	<a href='sound.html'>sound</a> • 
-	<a href='text.html'>text</a> • 
-	<a href='title.html'>title</a>
-	</td></tr>
-</table><br><br>
-
-<p align=center >Дмитрий Чуриков &#169 2015</p>
+<table class='tableTwo' border=2 style='border-color:green' bgcolor=#90ee90 width=100%>
+    <tr>
+        <td colspan=2 align=center><b><a href='../lines.html'>Строки по типам</a></b></td>
+    </tr>
+    <tr>
+        <td align=center width=10%><b>lt1</b></td>
+        <td>
+            <a href='action_action.html'>action (action)</a> •
+            <a href='ai_move.html'>ai_move</a> •
+            <a href='approach.html'>approach</a> •
+            <a href='attack.html'>attack</a> •
+            <a href='cannon.html'>cannon</a> •
+            <a href='control.html'>control</a> •
+            <a href='direction.html'>direction</a> •
+            <a href='fire_mode.html'>fire_mode</a> •
+            <a href='function.html'>function</a> •
+            <a href='impregnability.html'>impregnability</a> •
+            <a href='kind.html'>kind</a> •
+            <a href='miner.html'>miner</a> •
+            <a href='mode_game_speed.html'>mode(game_speed)</a> •
+            <a href='mode_squad_state.html'>mode(squad_state)</a> •
+            <a href='move_mode.html'>move_mode</a> •
+            <a href='name_reinforcement.html'>name(reinforcement)</a> •
+            <a href='name_scenario.html'>name(scenario)</a> •
+            <a href='name_set_clip.html'>name(set_clip)</a> •
+            <a href='name_task.html'>name(task)</a> •
+            <a href='player.html'>player</a> •
+            <a href='result.html'>result</a> •
+            <a href='say.html'>say</a> •
+            <a href='speed.html'>speed</a> •
+            <a href='state_actor_component.html'>state(actor_component)</a> •
+            <a href='state_selector.html'>state(селектор)</a> •
+            <a href='status.html'>status</a> •
+            <a href='type_if.html'>type(if,while)</a> •
+            <a href='type_movement.html'>type(movement)</a> •
+            <a href='type_selector.html'>type(селектор)</a> •
+            <a href='unmasking.html'>unmasking</a> •
+            <a href='var.html'>var</a> •
+            <a href='zone.html'>zone</a>
+        </td>
+    </tr>
+    <tr>
+        <td align=center><b>lt2</b></td>
+        <td>
+            <a href='action_inventory.html'>action(inventory)</a> •
+            <a href='action_linker.html'>action(linker)</a> •
+            <a href='action_mine_state.html'>action(mine_state)</a> •
+            <a href='action_waypoint.html'>action(waypoint)</a> •
+            <a href='burst_mode.html'>burst_mode</a> •
+            <a href='count_entity_manager.html'>count(entity_manager)</a> •
+            <a href='mode_actor_to_cover.html'>mode(actor_to_cover)</a> •
+            <a href='mode_emit.html'>mode(emit)</a> •
+            <a href='mode_event.html'> mode(event)</a> •
+            <a href='mode_if.html'>mode (if,while)</a> •
+            <a href='op.html'>op</a> •
+            <a href='operation_player.html'>operation(player)</a> •
+            <a href='operation_reinforcement.html'>operation(reinforcement)</a> •
+            <a href='operation_squad.html'>operation(squad)</a> •
+            <a href='place_linker.html'>place(linker)</a> •
+            <a href='quant_mode.html'>quant_mode</a> •
+            <a href='source_2.html'>source</a> •
+            <a href='state_task.html'>state(task)</a> •
+            <a href='volume_music.html'>volume(music)</a> •
+            <a href='who.html'>who</a>
+        </td>
+    </tr>
+    <tr>
+        <td align=center><b>lt3</b></td>
+        <td>
+            <a href='backward.html'>backward</a> •
+            <a href='discovered.html'>discovered</a> •
+            <a href='enable.html'>enable</a> •
+            <a href='examined.html'>examined</a> •
+            <a href='follow_commander.html'>follow_commander</a> •
+            <a href='forward.html'>forward</a> •
+            <a href='guard.html'>guard</a> •
+            <a href='inactive.html'>inactive</a> •
+            <a href='lock.html'>lock</a> •
+            <a href='no_advance.html'>no_advance</a> •
+            <a href='no_retreat.html'>no_retreat</a> •
+            <a href='weapon_prepare.html'>weapon_prepare</a>
+        </td>
+    </tr>
+    <tr>
+        <td align=center><b>lt6</b></td>
+        <td>
+            <a href='add_ables.html'>add(ables)</a> •
+            <a href='covers.html'>covers</a> •
+            <a href='drop.html'>drop</a> •
+            <a href='flags.html'>flags</a> •
+            <a href='remove.html'>remove</a>
+        </td>
+    </tr>
+    <tr>
+        <td align=center width=10%><b>lt7</b></td>
+        <td>
+            <a href='name_squad+create.html'>name(squad)</a> •
+            <a href='squad.html'>squad</a> •
+            <a href='tag.html'>tag</a> •
+            <a href='tag_add.html'>tag_add</a> •
+            <a href='tag_remove.html'>tag_remove</a> •
+            <a href='value.html'>value</a>
+        </td>
+    </tr>
+    <tr>
+        <td align=center><b>lb</b></td>
+        <td>
+            <a href='clear_queue.html'>clear_queue</a> •
+            <a href='clone.html'>clone</a> •
+            <a href='context.html'>context</a> •
+            <a href='deviate.html'>deviate</a> •
+            <a href='die.html'>die</a> •
+            <a href='disable_cancel.html'>disable_cancel</a> •
+            <a href='do_not_restore_camera.html'>do_not_restore_camera</a> •
+            <a href='do_not_store_camera.html'>do_not_store_camera</a> •
+            <a href='enabled.html'>enabled</a> •
+            <a href='force_auto_complete.html'>force_auto_complete</a> •
+            <a href='force_placement.html'>force_placement</a> •
+            <a href='ground.html'>ground</a> •
+            <a href='hide.html'>hide</a> •
+            <a href='ignore_captured_by_user.html'>ignore_captured_by_user</a> •
+            <a href='ignore_z.html'>ignore_z</a> •
+            <a href='in_camera.html'>in_camera</a> •
+            <a href='keep_orientation.html'>keep_orientation</a> •
+            <a href='loop.html'>loop</a> •
+            <a href='make_enemies_forget.html'>make_enemies_forget</a> •
+            <a href='make_squad.html'>make_squad</a> •
+            <a href='move_from_back.html'>move_from_back</a> •
+            <a href='nearest.html'>nearest</a> •
+            <a href='not_synced.html'>not_synced</a> •
+            <a href='on.html'>on</a> •
+            <a href='only_weapon.html'>only_weapon</a> •
+            <a href='random_weapon.html'>random_weapon</a> •
+            <a href='resume.html'>resume</a> •
+            <a href='smooth_begin.html'>smooth_begin</a> •
+            <a href='smooth_end.html'>smooth_end</a> •
+            <a href='stop_all.html'>stop_all</a>
+        </td>
+    </tr>
+    <tr>
+        <td align=center><b>ln</b></td>
+        <td>
+            <a href='add_objective_progress.html'>add(objective_progress)</a> •
+            <a href='advance_ratio.html'>advance_ratio</a> •
+            <a href='altitude.html'>altitude</a> •
+            <a href='amount.html'>amount</a> •
+            <a href='attack_altitude.html'>attack_altitude</a> •
+            <a href='circledelay.html'>cirledelay</a> •
+            <a href='count.html'>count</a> •
+            <a href='delay.html'>delay</a> •
+            <a href='energy.html'>energy</a> •
+            <a href='entity.html'>entity</a> •
+            <a href='fade.html'>fade</a> •
+            <a href='forward_numeric.html'>forward</a> •
+            <a href='fov.html'>fov</a> •
+            <a href='health.html'>health</a> •
+            <a href='interval.html'>interval</a> •
+            <a href='max_speed_kph.html'>max_speed_kph</a> •
+            <a href='mids.html'>mids</a> •
+            <a href='move_radius.html'>move_radius</a> •
+            <a href='radius.html'>radius</a> •
+            <a href='retreat_ratio.html'>retreat_ratio</a> •
+            <a href='score.html'>score</a> •
+            <a href='set.html'>set</a> •
+            <a href='speed_numeric.html'>speed</a> •
+            <a href='speed_kph.html'>speed_kph</a> •
+            <a href='target_waypoint.html'>target_waypoint</a> •
+            <a href='time.html'>time</a> •
+            <a href='totalTime.html'>totalTime</a> •
+            <a href='turn.html'>turn</a> •
+            <a href='up.html'>up</a> •
+            <a href='volume_action.html'>volume(action)</a> •
+            <a href='waypoint.html'>waypoint</a> •
+            <a href='waypoint_to_attack.html'>waypoint_to_attack</a>
+        </td>
+    </tr>
+    <tr>
+        <td align=center width=10%><b>lt</b></td>
+        <td>
+            <a href='animation.html'>animation</a> •
+            <a href='bone.html'>bone</a> •
+            <a href='collage.html'>collage</a> •
+            <a href='component.html'>component</a> •
+            <a href='copy_squad.html'>copy_squad</a> •
+            <a href='effect.html'>effect</a> •
+            <a href='event_mp_event.html'>event(mp_event)</a> •
+            <a href='name_environment.html'>name(environment)</a> •
+            <a href='name_squad.html'>name_squad</a> •
+            <a href='place_board.html'>place(board)</a> •
+            <a href='slot_name.html'>slot_name</a> •
+            <a href='team.html'>team</a> •
+            <a href='text_con.html'>text(con)</a> •
+            <a href='video.html'>video</a>
+        </td>
+    </tr>
+    <tr>
+        <td align=center><b>ls</b></td>
+        <td>
+            <a href='call.html'>call</a> •
+            <a href='crew.html'>crew</a> •
+            <a href='enemies.html'>enemies</a> •
+            <a href='entities.html'>entities</a> •
+            <a href='entity_spawn.html'>entity(spawn)</a> •
+            <a href='event.html'>event</a> •
+            <a href='event_on_cancel.html'>event_on_cancel</a> •
+            <a href='event_on_next.html'>event_on_next</a> •
+            <a href='name_trigger.html'>name(trigger)</a> •
+            <a href='selector.html'>selector</a> •
+            <a href='start.html'>start</a> •
+            <a href='stop.html'>stop</a> •
+            <a href='target.html'>target</a> •
+            <a href='trigger_on_cancel.html'>trigger_on_cancel</a> •
+            <a href='trigger_on_next.html'>trigger_on_next</a> •
+            <a href='vehicle.html'>vehicle</a>
+        </td>
+    </tr>
+    <tr>
+        <td align=center><b>lts</b></td>
+        <td>
+            <a href='color.html'>color</a> •
+            <a href='item.html'>item</a> •
+            <a href='message.html'>message</a> •
+            <a href='name_sound.html'>name(sound)</a> •
+            <a href='sound.html'>sound</a> •
+            <a href='text.html'>text</a> •
+            <a href='title.html'>title</a>
+        </td>
+    </tr>
+</table>
+<br/>
 </body>
 </html>

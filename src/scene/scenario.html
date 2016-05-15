@@ -1,40 +1,54 @@
 <html>
 <head>
-<title>Scenario</title><meta charset='utf-8'>
-<link rel='stylesheet' type='text/css' href='../style.css'>
-<link rel="icon" href="../images/favicon.ico" type="image/x-icon">
-<link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+    <title>Scenario</title>
+    <meta charset='utf-8'>
+    <link rel='stylesheet' type='text/css' href='../style.css'>
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
 </head>
 <body>
 <h1>Scenario</h1>
-<a href='../editor.html'><img src='../images/home.jpg' class='homepage_ico' title="Перейти к главной странице" /></a>
-<center><img src='../images/commands/scene/scenario.jpg'></center>
+<a href='../editor.html'><img src='../images/home.jpg' class='homepage_ico' title="Перейти к главной странице"/></a>
+<div style="text-align: center;"><img src='../images/commands/scene/scenario.jpg'></div>
 <p>Команда <b>scenario</b> добавляет в миссию видео или камеру.</p>
 <p>По строкам:
 <ul>
-<li><a href='../lines/text.html'>text</a> - указывает <a href='../mission_prop/text_browser.html'>дополнительный текст</a></li>
-<li><a href='../lines/sound.html'>sound</a> - указывает на звуковой файл</li>
-<li><a href='../lines/video.html'>video</a> - указывает на видеофайл</li>
-<li><a href='../lines/name_scenario.html'>name</a> - указывает на <a href='../others/camera.html'>камеру</a></li>
-<li><a href='../lines/loop.html'>loop</a> - запускает ролик по кругу</li>
-<li><a href='../lines/not_synced.html'>not_synced</a> - параметр прерывания ролика</li>
-<li><a href='../lines/disable_cancel.html'>disable_cancel</a> - возмoжность прервать ролик вручную</li>
-<li><a href='../lines/smooth_begin.html'>smooth_begin</a> - параметр перемещения камеры к началу ролика</li>
-<li><a href='../lines/smooth_end.html'>smooth_end</a> - параметр перемещения камеры после конца ролика</li>
-<li><a href='../lines/quant_mode.html'>quant_mode</a> - указывает что-то?</li>
-<li><a href='../lines/event_on_next.html'>event_on_next</a> - указывает на событие, что активируется после ролика</li>
-<li><a href='../lines/event_on_cancel.html'>event_on_cancel</a> - указывает на событие, что активируется в случае прерывания ролика</li>
-<li><a href='../lines/trigger_on_next.html'>trigger_on_next</a> - указывает на триггер, что активируется после ролика</li>
-<li><a href='../lines/trigger_on_cancel.html'>trigger_on_cancel</a> - указывает на триггер, что активируется в случае прерывания ролика</li>
-<li><a href='../lines/do_not_store_camera.html'>do_not_store_camera</a> - не запоминать положение камеры</li>
-<li><a href='../lines/do_not_restore_camera.html'>do_not_restore_camera</a> - не восстанавливать положение камеры</li>
-<li><a href='../lines/force_auto_complete.html'>force_auto_complete</a> - не ждать нажатия кнопки Продолжить(Далее) после окончания ролика</li>
-</ul></p>
+    <li><a href='../lines/text.html'>text</a> - указывает <a href='../mission_prop/text_browser.html'>дополнительный
+        текст</a></li>
+    <li><a href='../lines/sound.html'>sound</a> - указывает на звуковой файл</li>
+    <li><a href='../lines/video.html'>video</a> - указывает на видеофайл</li>
+    <li><a href='../lines/name_scenario.html'>name</a> - указывает на <a href='../others/camera.html'>камеру</a></li>
+    <li><a href='../lines/loop.html'>loop</a> - запускает ролик по кругу</li>
+    <li><a href='../lines/not_synced.html'>not_synced</a> - параметр прерывания ролика</li>
+    <li><a href='../lines/disable_cancel.html'>disable_cancel</a> - возможность прервать ролик вручную</li>
+    <li><a href='../lines/smooth_begin.html'>smooth_begin</a> - параметр перемещения камеры к началу ролика</li>
+    <li><a href='../lines/smooth_end.html'>smooth_end</a> - параметр перемещения камеры после конца ролика</li>
+    <li><a href='../lines/quant_mode.html'>quant_mode</a> - указывает что-то?</li>
+    <li><a href='../lines/event_on_next.html'>event_on_next</a> - указывает на событие, что активируется после ролика
+    </li>
+    <li><a href='../lines/event_on_cancel.html'>event_on_cancel</a> - указывает на событие, что активируется в случае
+        прерывания ролика
+    </li>
+    <li><a href='../lines/trigger_on_next.html'>trigger_on_next</a> - указывает на триггер, что активируется после
+        ролика
+    </li>
+    <li><a href='../lines/trigger_on_cancel.html'>trigger_on_cancel</a> - указывает на триггер, что активируется в
+        случае прерывания ролика
+    </li>
+    <li><a href='../lines/do_not_store_camera.html'>do_not_store_camera</a> - не запоминать положение камеры</li>
+    <li><a href='../lines/do_not_restore_camera.html'>do_not_restore_camera</a> - не восстанавливать положение камеры
+    </li>
+    <li><a href='../lines/force_auto_complete.html'>force_auto_complete</a> - не ждать нажатия кнопки Продолжить(Далее)
+        после окончания ролика
+    </li>
+</ul>
+</p>
 <h3>См. также</h3>
 <li><a href='../mission_prop/events.html'>событие</a></li>
 <li><a href='../others/trigger.html'>триггер</a></li>
 <li><a href='../elements.html'>ролик</a></li>
 <li><a href='.html'>расположение файлов</a></li>
-<iframe class='commands' src='../table_commands.html' />
+<iframe class='commands' src='../table_commands.html'></iframe>
+<script src="../js/signature.js"></script>
 </body>
 </html>

@@ -1,27 +1,40 @@
 <html>
 <head>
-<title>Строка Approach</title><meta charset='utf-8'>
-<link rel='stylesheet' type='text/css' href='../style.css'>
-<link rel="icon" href="../images/favicon.ico" type="image/x-icon">
-<link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+    <title>Строка Approach</title>
+    <meta charset='utf-8'>
+    <link rel='stylesheet' type='text/css' href='../style.css'>
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
 </head>
 <body>
 <h1>Approach</h1>
-<a href='../editor.html'><img src='../images/home.jpg' class='homepage_ico' title="Перейти к главной странице" /></a>
-<img src='../images/lines/list_approach.jpg'>
+<a href='../editor.html'><img src='../images/home.jpg' class='homepage_ico' title="Перейти к главной странице"/></a>
+<img src='../images/lines/list_approach.jpg'/>
 <p>Строка approach, тип lt1, задаёт тип перемещения юнита к вейпоинту. Имеет 5 значений:
 <ul>
-<li><b>force</b> - юнит достигает вейпоинта своим ходом</li>
-<li><b>teleport</b> - юнит мгновенно перемещается к заданому вейпоинту</li>
-<li><b>teleport & rotate</b> - то же, что и <b>teleport</b>, но при телепортации юнит сразу поворачивается в сторону направления движения</li>
-<li><b>safe teleport</b> - то же, что и <b>teleport</b>, но при этом, если вейпоинт чем-то загромождён, юнит появится как можно ближе к нему и начнёт движение с этой точки</li>
-<li><b>safe teleport & rotate</b> - объеденяет в себе <b>teleport & rotate</b> и <b>safe teleport</b></li></ul>
-Значение по-умолчанию эквивалентно <b>force</b>.<br>В команде <a href='../waypoint.html'>waypoint</a> доступно только если в строке <a href='who.html'>who</a> выбрано <b>actor</b> и в <a href='action_action.html'>action</a> - <b>start</b>.</p>
-<p>Если есть риск появления на начальном вейпе преграды, лучше выбрать параметр с <b>safe</b>, потому что иначе юнит начнёт движение к последнему вейпоинту, игнорируя все промежуточные вейпоинты, либо вовсе пойдёт куда-то по своим делам.</p>
-<p>Встречается в командах <a href='../waypoint.html'>waypoint</a>, <a href='../other/actor_to_waypoint.html'>actor_to_waypoint</a>.</p>
+    <li><b>force</b> - юнит достигает вейпоинта своим ходом</li>
+    <li><b>teleport</b> - юнит мгновенно перемещается к заданому вейпоинту</li>
+    <li><b>teleport & rotate</b> - то же, что и <b>teleport</b>, но при телепортации юнит сразу поворачивается в сторону
+        направления движения
+    </li>
+    <li><b>safe teleport</b> - то же, что и <b>teleport</b>, но при этом, если вейпоинт чем-то загромождён, юнит
+        появится как можно ближе к нему и начнёт движение с этой точки
+    </li>
+    <li><b>safe teleport & rotate</b> - объеденяет в себе <b>teleport & rotate</b> и <b>safe teleport</b></li>
+</ul>
+Значение по-умолчанию эквивалентно <b>force</b>.<br/>
+В команде <a href='../waypoint.html'>waypoint</a> доступно только если в строке <a href='who.html'>who</a> выбрано <b>actor</b>
+и в <a href='action_action.html'>action</a> - <b>start</b>.
+</p>
+<p>Если есть риск появления на начальном вейпе преграды, лучше выбрать параметр с <b>safe</b>, потому что иначе юнит
+    начнёт движение к последнему вейпоинту, игнорируя все промежуточные вейпоинты, либо вовсе пойдёт куда-то по своим
+    делам.</p>
+<p>Встречается в командах <a href='../waypoint.html'>waypoint</a>, <a href='../other/actor_to_waypoint.html'>actor_to_waypoint</a>.
+</p>
 <h3>См. также</h3>
 <li><a href=''>вейпоинт</a></li>
 <li><a href='waypoint.html'>waypoint (строка)</a></li>
-<iframe class='insertTables' src='tables.html' />
+<iframe class='insertTables' src='tables.html'></iframe>
+<script src="../js/signature.js"></script>
 </body>
 </html>
