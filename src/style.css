@@ -9,6 +9,14 @@ h1 {
     text-align: center;
 }
 
+h4 {
+    margin-left: 50px;
+}
+
+.image-center{
+    text-align: center;
+}
+
 .homepage_ico {
     position: absolute;
     left: 5px;
