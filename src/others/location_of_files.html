@@ -14,22 +14,43 @@
 <p>Редактор позволяет добавлять в миссии свой медиаконтент.<br/>
     Для того, чтобы он мог их найти, нужно поместить их в определённые директории.<br/>
     Для аудиофайлов - это директория <i>{root}/resource/music</i>.<br/>
-    Для видеофайлов - это директория <i>{root}/resource/video/mission/single/{company}/{mission}</i>.<br/>
-    Тексты для миссий располагаются по адресу: <i>{root}/resource/interface/text/mission/single/{company}/{mission}</i>.
+    Для видеофайлов - это директория <i>{root}/resource/video/mission/single/{campaign}/{mission}</i>.<br/>
+    Тексты для миссий располагаются по адресу: <i>{root}/resource/interface/text/mission/single/{campaign}/{mission}</i>.
 </p>
-<p>
     <h4>Примечания</h4>
+<p>
 <ul>
     <li><b>{root}</b> - корневая папка игры (например, моя ВТВ2:ЛП установлена по адресу '<i>E:\Games\VtV\menofwar</i>')</li>
-    <li><b>{company}</b> - название папки кампании</li>
+    <li><b>{campaign}</b> - название папки кампании</li>
     <li><b>{mission}</b> - название папки миссии</li>
 </ul>
 Названия директорий кампании и миссии должны совпадать с аналогичными в папке <i>{root}/resource/map/single/</i>.
 </p>
+
+<p>
+    Редартор поддерживает следующие расширения файлов:
+    <ul>
+        <li>Изображения</li>
+        <ul>
+            <li>.jgp - пользовательский</li>
+            <li>.bmp - пользовательский, элементы интерфейса</li>
+            <li>.dds - пользовательский, текстуры</li>
+        </ul>
+        <li>Аудио</li>
+        <ul>
+            <li>.mp3 - музыка</li>
+            <li>.wav - звуки</li>
+        </ul>
+        <li>Видео</li>
+        <ul>
+            <li>.avi</li>
+        </ul>
+    </ul>
+</p>
 <h3>См. также</h3>
 <li><a href='../scene/music.html'>music (команда)</a></li>
 <li><a href='../scene/scenario.html'>scenario (команда)</a></li>
-<li><a href='../'>создание мода</a></li>
+<li><a href='../others/mod/mod.html'>создание мода</a></li>
 <script src="../js/signature.js"></script>
 </body>
 </html>

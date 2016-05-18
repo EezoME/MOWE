@@ -1,0 +1,97 @@
+<html>
+<head>
+    <title>Создание мода</title>
+    <meta charset='utf-8'>
+    <link rel='stylesheet' type='text/css' href='../../style.css'>
+    <link rel="icon" href="../../images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../../images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+<h1>Создание мода</h1>
+<script src="../../js/header_href_for_subfolder.js"></script>
+<p>
+    Для того, чтобы было удобнее хранить вместе все элементы Ваших миссий, можно поместить их в мод.<br/>
+    Для начала, нужно в корне игры создать папку с именем 'mods'.<br/>
+    Далее в этой папке создать ещё одну с каким-либо названием, например 'my first mod'.<br/>
+    В папке мода создаём папки 'localization' и 'resource', а также файл '<a href="mod.info">mod.info</a>'
+    (редактируется любым текстовым редактором).<br/>
+    Этот файл имеет структуру, которую распознаёт игра. Обязательные параметры: <i>name</i> и <i>desc</i>.<br/>
+    <b>ВАЖНО</b>: значение параметра <i>name</i> должно совпадать с именем папки мода.<br/><br/>
+
+    В папке 'localization' создаём подпапки как в директории игры. Тут будут хранится тексты.<br/><br/>
+
+    В папке 'resource' также создаём дерево. Тут будут храниться все остальные ресурсы.<br/><br/>
+
+    Далее приведён пример общй структуры мода.
+</p>
+    <pre>
+    {root}
+        mods
+            {mod}
+                localization
+                    mission
+                        single
+                            {campaign}
+                resource
+                    interface
+                        text
+                            mission
+                                single
+                                    {campaign}
+                    map
+                        single
+                            {campaign}
+                                {mission}
+                    music
+                    video
+                        mission
+                            single
+                                {campaign}
+                                    {mission}
+                mod.info
+
+    </pre>
+    <h4>Файлы в папках</h4>
+<p>
+Папка {campaign} в <i>localization/mission/single</i> и <i>resource/interface/text/mission/single</i>, как правило, содержит в себе следующие файлы:
+    <ul>
+        <li><a href="1.lng">{mission}.lng</a> - стандартный файл с текстами миссии (может быть несколько)</li>
+        <li><a href="campaign.lng">campaign.lng</a> - файл с описанием кампании</li>
+    </ul>
+Файл campaign.lng имеет обязательные параметры <i>title</i> и <i>name</i>, где указывается подпись к кампании и её название соответственно.
+</p>
+
+<p>
+Папка {mission} в <i>resource/map/mission/single/{campaign}</i>, как правило, содержит в себе следующие файлы:
+    <ul>
+        <li>{f3}.mi - файл миссии (создаётся редактором при сохранении миссии в РРМ)</li>
+        <li>map - файл карты (создаётся редактором при сохранении миссии в РРК)</li>
+        <li>map.grs - файл карты (создаётся редактором при сохранении миссии в РРК)</li>
+        <li>map.net - файл карты (создаётся редактором при сохранении миссии в РРК)</li>
+        <li>map.ply - файл карты (создаётся редактором при сохранении миссии в РРК)</li>
+        <li>minimap.jpg - изображение миникарты</li>
+        <li>preview.jpg - изображение экрана загрузки миссии</li>
+    </ul>
+</p>
+
+<h4>Примечания</h4>
+<p>
+<ul>
+    <li><b>{root}</b> - корневая папка игры (например, моя ВТВ2:ЛП установлена по адресу '<i>E:\Games\VtV\menofwar</i>')</li>
+    <li><b>{mod}</b> - название папки мода</li>
+    <li><b>{campaign}</b> - название папки кампании</li>
+    <li><b>{mission}</b> - название папки миссии</li>
+    <li><b>{f3}</b> - название файла миссии, которое Вы ему даёте при сохранении миссии в РРМ</li>
+</ul>
+Названия директорий кампании и миссии должны совпадать с аналогичными в папке <i>{root}/resource/map/single/</i>.
+</p>
+
+<h3>См. также</h3>
+<li><a href='../location_of_files.html'>Расположение файлов</a></li>
+<li><a href=''>Специальная прорамма для создания модов</a>, созданная одним из администраторов группы Вконтакте Николаем
+    Саенко
+</li>
+
+<script src="../../js/signature.js"></script>
+</body>
+</html>
