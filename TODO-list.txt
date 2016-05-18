@@ -1,0 +1,22 @@
+Доп задания по редактору:
+- разобраться с функциями (+ разобраться как работает rt_function)
+- предназначение команд select, placement, gamestatus
+
+	Неоконченные страницы:
+volume (action)
+unmasking
+text (con)
+quant_mode
+place (linker)
+ignoze_z
+status
+makes_enemies_forget
+force_placement
+
+mine
+rt_function
+
+
+<h4 style='color:red' >Если у Вас есть информация, которая поможет закончить эту страницу, присылайте её мне (Дмитрию Чурикову). Я её размещу сдесь, естественно, указав источник (то есть Вас).</h4>
+
+<p align=center >Дмитрий Чуриков &#169 2015</p>
