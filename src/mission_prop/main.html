@@ -8,16 +8,19 @@
 </head>
 <body>
 <h1>Mission Properties</h1>
-<a href='../editor.html'><img src='../images/home.jpg' class='homepage_ico' title="Перейти к главной странице"/></a>
+<script src="../js/header_href.js"></script>
 <div style="text-align: center;"><img src='../images/mission_prop/mission_properties.jpg'></div>
-<p>Окно свойств помогает сделать миссию красивой и со всеми особенностями.</p>
+<p>Окно свойств помогает сделать миссию красивой и со всеми особенностями. Вызвать это окно можно нажав клавишу F9 в РРМ(F3).
+</p>
 <p name='show'>Группа <b>show</b> состоит из трёх строк: <b>waypoint</b>, <b>zones</b> и <b>covers</b>. Если эти строки
     принимают значение <b>ИСТИНА</b>, то в редакторе всегда будут отображаться <a href='../others/waypoint.html'>вейпоинты</a>,
     <a href='../others/zone.html'>зоны</a> и <a href='../others/cover.html'>укрытия</a> соответственно. Если же значание
     строк <b>ЛОЖЬ</b>, то эти элементы будут отображаться только на вкладках, где они редактируются (удобно при очень
-    громоздких миссиях). На картинке все эти элементы будут отображаться в редакторе.</p>
+    громоздких миссиях). На картинке все эти элементы будут отображаться в редакторе.
+</p>
 <p name='player'>Группа <b>player</b> состоит из трёх строк: сама строка <b>player</b>, <b>diplomacy</b> и
     <b>aliaces</b>.<br/><br/>
+
     В строке <b>player</b> выбирается главный <a href='../elements.html'>плеер</a>, тот, кем будет управлять игрок.
     <br><img src='../images/mission_prop/list_player.jpg'/><br/><br/>
 
@@ -40,22 +43,36 @@
 <p name='helpers'>Строка <b style="text-decoration: underline;">tasks</b> открывает <a href='tasks.html'>редактор
     заданий</a>.<br><br>
     Строка <b>reinforcements</b> открывает <a href='reinforcements.html'>редактор подкреплений</a>.<br><br>
-    Строка <b>event</b> открывает окно событий.<br><img src='../images/mission_prop/events_f9.jpg'/><br><br>
-    Строка <b>vars</b> открывает окно переменных.<br><img src='../images/mission_prop/vars.jpg'/><br><br>
-    Строка <b>functions</b> открывает окно функций.<br><img src='../images/mission_prop/functions.jpg'/><br></p>
-<p name='texts'>Строка <b>text</b> открывает <a href='text_browser.html'>текстовый браузер</a></p>
-<p name='breeds'>Строка <b>breeds</b> открывает <a href='breeds.html'>редактор юнитов</a>.</p>
-<p name='environment'>Строка <b>environment</b> открывает <a href='environment.html'>окно окрущающей среды</a></p>
-<p name='modifiers'>Строка <b>modifiers</b> открывает <a href='modifiers.html'>редактор модификаторов</a>.</p>
-<p name='entity_manager'>Строка <b>entity_manager</b> - булевская (тип lb).<br><img
-        src='../images/mission_prop/entity_manager.jpg'/><br>При значении <b>ИСТИНА</b> открывает доп. строку
-    <b>count</b>, в которой указывается коефициент быстроты исчезновения разрушеной техники.<br><img
-            src='../images/mission_prop/entity_manager_true.jpg'></p>
+    Строка <b>event</b> открывает окно событий.<br/>
+    <img src='../images/mission_prop/events_f9.jpg'/><br/><br/>
+
+    Строка <b>vars</b> открывает окно переменных.<br/>
+    <img src='../images/mission_prop/vars.jpg'/><br/><br/>
+
+    Строка <b>functions</b> открывает окно функций.<br/>
+    <img src='../images/mission_prop/functions.jpg'/><br/>
+</p>
+<p name='texts'>Строка <b>text</b> открывает <a href='text_browser.html'>текстовый браузер</a>
+</p>
+<p name='breeds'>Строка <b>breeds</b> открывает <a href='breeds.html'>редактор юнитов</a>.
+</p>
+<p name='environment'>Строка <b>environment</b> открывает <a href='environment.html'>окно окрущающей среды</a>
+</p>
+<p name='modifiers'>Строка <b>modifiers</b> открывает <a href='modifiers.html'>редактор модификаторов</a>.
+</p>
+<p name='entity_manager'>Строка <b>entity_manager</b> - булевская (тип lb).<br/>
+    <img src='../images/mission_prop/entity_manager.jpg'/><br/>
+    При значении <b>ИСТИНА</b> открывает доп. строку <b>count</b>, в которой указывается коефициент быстроты
+    исчезновения разрушеной техники.<br/>
+    <img src='../images/mission_prop/entity_manager_true.jpg'>
+</p>
 <p name='azimuth'>Строка <b>azimuth</b> указывает начальную ориентацию для карты и юнитов на ней. Принимает числовое
     значения (по-умолчанию - <b>0</b>), открывает <a class="popupimage" href="">окно выбора направления<span><img
-            src="../images/mission_prop/select_direction.jpg"/></span></a>.</p>
+            src="../images/mission_prop/select_direction.jpg"/></span></a>.
+</p>
 <p name='map_orientation'>Строка <b>map_orientation</b> (тип <a href='../lines.html'>lt2</a>) указывает начальную
-    ориентацию для карты.<br><img src='../images/mission_prop/list_map_orientation.jpg'></p>
+    ориентацию для карты.<br><img src='../images/mission_prop/list_map_orientation.jpg'>
+</p>
 <h3>См. также</h3>
 <li><a href='events.html'>События</a></li>
 <li><a href='variables.html'>Переменные</a></li>

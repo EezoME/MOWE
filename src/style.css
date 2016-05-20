@@ -9,8 +9,16 @@ h1 {
     text-align: center;
 }
 
+h2 {
+    text-align: center;
+}
+
 h4 {
     margin-left: 50px;
+}
+
+img {
+    margin: 5px;
 }
 
 .image-center{
