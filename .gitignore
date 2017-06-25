@@ -1,6 +1,5 @@
-blacklist.txt
 *.zip
 *.xlsx
-src/images
-menOfWarEditorIndex.html
-MOW info
+build/
+.idea/
+/node_modules/
